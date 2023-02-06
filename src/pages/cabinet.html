@@ -1,0 +1,102 @@
+{{> crumbs }}
+
+<section class="section--inner">
+    <div class="container">
+        <div class="title-h1 font-bold spacing-2">Личный кабинет</div>
+
+        {{> manager }}
+
+        <div class="row row-gap-20">
+            <div class="col-md-2">
+                <nav class="d-flex flex-column align-items-start gap-25 row-gap-xs-10 text">
+                    <a href="#" class="link-blue">Мои данные</a>
+                    <a href="#">Мои заказы</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#">Выйти</a>
+                </nav>
+            </div>
+            <div class="col-md-10">
+                <div class="title-h3 font-bold spacing-2">Мои данные</div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-md-8">
+                        <label class="file spacing-2">
+                            <input type="file" class="js-upload-file" accept="image/jpeg,image/png,image/gif">
+                            <span class="file__in">
+                                <span class="file__picture-wrapper">
+                                    <img class="file__picture" src="" alt="фото">
+                                </span>
+                                <span class="link link-blue">Загрузить аватар</span>
+                            </span>
+                        </label>
+
+                        <form class="spacing-1 w-100">
+                            <div class="row row-gap-20 spacing-2">
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Ваше имя</span>
+                                        <input class="form-field__input" type="text" placeholder="Семён">
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Телефон</span>
+                                        <input class="form-field__input js-tel" type="tel" placeholder="+7 911 785-52-13">
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg form-field-date">
+                                        <span class="form-field__label">Дата рождения</span>
+                                        <input type="date" class="form-field__input" value="2014-12-29" >
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#calendar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Электронная почта</span>
+                                        <input class="form-field__input" type="email" placeholder="Email@example.com">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="button button-primary">Сохранить данные</button>
+                        </form>
+
+                        <form class="spacing-2 w-100">
+                            <div class="title-h4 font-bold spacing-2">Изменить пароль</div>
+                            <div class="row row-gap-20 spacing-2">
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Старый пароль</span>
+                                        <input class="form-field__input" type="password" placeholder="123125">
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 d-none d-sm-block"></div>
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Новый пароль</span>
+                                        <input class="form-field__input" type="password" placeholder="123125">
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 d-none d-sm-block"></div>
+                                <div class="col-sm-6">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Повторите новый пароль</span>
+                                        <input class="form-field__input" type="password" placeholder="123125">
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 d-none d-sm-block"></div>
+                            </div>
+
+                            <button type="submit" class="button button-primary">Обновить пароль</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> cabinet-banner }}

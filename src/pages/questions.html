@@ -1,0 +1,69 @@
+{{> crumbs }}
+
+<section class="section--inner">
+    <div class="container">
+        <div class="title-h1 font-bold spacing-1">Вопрос-ответ</div>
+
+        <div class="card-tabs card-tabs-wrapper">
+            <div class="card-tabs-list">
+                <div class="card-tabs-list__item">Все вопросы</div>
+                <div class="card-tabs-list__item">Оплата</div>
+                <div class="card-tabs-list__item">Доставка</div>
+                <div class="card-tabs-list__item">Монтаж</div>
+                <div class="card-tabs-list__item">Разработка ППР</div>
+                <div class="card-tabs-list__item">Строительные леса</div>
+                <div class="card-tabs-list__item">Другое</div>
+            </div>
+            <div class="card-tabs-content">
+                <div class="card-tabs-content__item lh13">
+                    {{> common-questions-list }}
+                </div>
+                <div class="card-tabs-content__item lh13">Оплата</div>
+                <div class="card-tabs-content__item lh13">Доставка</div>
+                <div class="card-tabs-content__item lh13">Монтаж</div>
+                <div class="card-tabs-content__item lh13">Разработка ППР</div>
+                <div class="card-tabs-content__item lh13">Строительные леса</div>
+                <div class="card-tabs-content__item lh13">Другое</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section--inner">
+    <div class="container">
+        <form class="leaf bg-lightBlue">
+            <div class="title-h3 font-bold spacing-4">Не нашли ответ на свой вопрос?</div>
+            <div class="text color-grayText3 spacing-2">Напишите его нам, и мы свяжемся с вами в течение рабочего дня</div>
+
+            <div class="row row-gap-20 spacing-2">
+                <div class="col-sm-6 col-lg-7">
+                    <label class="form-field form-field-textarea form-field-no-border h-100">
+                        <textarea class="h-100" rows="4" placeholder="Ваше сообщение"></textarea>
+                    </label>
+                </div>
+                <div class="col-sm-6 col-lg-5">
+                    <div class="d-flex flex-column row-gap-20">
+                        <label class="form-field">
+                            <span class="form-field__label">Ваше имя</span>
+                            <input type="text" class="form-field__input w-100" placeholder="Семёнов Семён">
+                        </label>
+                        <label class="form-field">
+                            <span class="form-field__label">Телефон</span>
+                            <input type="tel" class="form-field__input w-100" placeholder="8 911 657 84-22">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-sm-center flex-column flex-sm-row gap-20">
+                <button class="button button-primary" type="submit">Отправить сообщение</button>
+                <span class="color-grayText2 text3">Заполняя форму вы соглашаетесь на <a href="#" class="link-grayText2 und">обработку персональных данных</a></span>
+            </div>
+        </form>
+    </div>
+</section>
+
+{{> advantages }}
+
+
+

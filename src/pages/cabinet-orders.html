@@ -1,0 +1,439 @@
+{{> crumbs }}
+
+<section class="section--inner">
+    <div class="container">
+        <div class="title-h1 font-bold spacing-2">Личный кабинет</div>
+
+        {{> manager }}
+
+        <div class="row row-gap-20">
+            <div class="col-md-2">
+                <nav class="d-flex flex-column align-items-start gap-25 row-gap-xs-10 text">
+                    <a href="#">Мои данные</a>
+                    <a href="#" class="link-blue">Мои заказы</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#">Выйти</a>
+                </nav>
+            </div>
+            <div class="col-md-10">
+                <div class="title-h3 font-bold spacing-2">Мои заказы</div>
+
+                <div class="card-tabs cabinet-tabs card-tabs-wrapper">
+                    <div class="card-tabs-list">
+                        <div class="card-tabs-list__item">
+                            <span>Все заказы</span>
+                        </div>
+                        <div class="card-tabs-list__item">
+                            <span>В работе</span>
+                        </div>
+                        <div class="card-tabs-list__item">
+                            <span>Завершённые</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card-tabs-content">
+                        <div class="card-tabs-content__item ">
+                            <div class="d-flex flex-column row-gap-20">
+                                <div class="w-100 leaf">
+                                    <div class="d-flex flex-wrap align-items-center gap-10 spacing-2">
+                                        <div class="title-h4 font-bold">Заказ № 12345678</div>
+                                        <div class="order-label order-label-orange">Комплектуется</div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-20 row-gap-10 gap-lg-40 spacing-2">
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ получения</div>
+                                            <div class="text">Дата и время заказа</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Доставка</div>
+                                            <div class="text">Сумма</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ оплаты</div>
+                                            <div class="text">Деловые линии</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">23.06.2022 11:36</div>
+                                            <div class="text">0 р</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">11 452 р</div>
+                                            <div class="text">Наличными</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-2">
+                                        <div class="color-grayText2">Адрес получателя</div>
+                                        <div class="text">Москва, ул. Академика Королёва 12</div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-1">
+                                        <div class="font-bold title-h6">Последнее действие с заказом</div>
+                                        <div class="text">Информация появится после завершения оформления заказа</div>
+                                    </div>
+
+                                    <div class="order-item-list__wrapper">
+                                        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center w-100 justify-content-between spacing-2">
+                                            <div class="font-bold title-h6">Товары в заказе</div>
+                                            <button class="js-toggle-order-list order-button link-blue link-icon link-blue-icon">
+                                                <span>Показать</span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-bottom"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="order-item-list">
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 leaf">
+                                    <div class="d-flex flex-wrap align-items-center gap-10 spacing-2">
+                                        <div class="title-h4 font-bold">Заказ № 12345678</div>
+                                        <div class="order-label order-label-green">Завершен</div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-20 row-gap-10 gap-lg-40 spacing-2">
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ получения</div>
+                                            <div class="text">Дата и время заказа</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Доставка</div>
+                                            <div class="text">Сумма</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ оплаты</div>
+                                            <div class="text">Деловые линии</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">23.06.2022 11:36</div>
+                                            <div class="text">0 р</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">11 452 р</div>
+                                            <div class="text">Наличными</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-2">
+                                        <div class="color-grayText2">Адрес получателя</div>
+                                        <div class="text">Москва, ул. Академика Королёва 12</div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-1">
+                                        <div class="font-bold title-h6">Последнее действие с заказом</div>
+                                        <div class="text">Информация появится после завершения оформления заказа</div>
+                                    </div>
+
+                                    <div class="order-item-list__wrapper">
+                                        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center w-100 justify-content-between spacing-2">
+                                            <div class="font-bold title-h6">Товары в заказе</div>
+                                            <button class="js-toggle-order-list order-button link-blue link-icon link-blue-icon">
+                                                <span>Показать</span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-bottom"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="order-item-list">
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-tabs-content__item">
+                            <div class="d-flex flex-column row-gap-20">
+                                <div class="w-100 leaf">
+                                    <div class="d-flex flex-wrap align-items-center gap-10 spacing-2">
+                                        <div class="title-h4 font-bold">Заказ № 12345678</div>
+                                        <div class="order-label order-label-orange">Комплектуется</div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-20 row-gap-10 gap-lg-40 spacing-2">
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ получения</div>
+                                            <div class="text">Дата и время заказа</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Доставка</div>
+                                            <div class="text">Сумма</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ оплаты</div>
+                                            <div class="text">Деловые линии</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">23.06.2022 11:36</div>
+                                            <div class="text">0 р</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">11 452 р</div>
+                                            <div class="text">Наличными</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-2">
+                                        <div class="color-grayText2">Адрес получателя</div>
+                                        <div class="text">Москва, ул. Академика Королёва 12</div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-1">
+                                        <div class="font-bold title-h6">Последнее действие с заказом</div>
+                                        <div class="text">Информация появится после завершения оформления заказа</div>
+                                    </div>
+
+                                    <div class="order-item-list__wrapper">
+                                        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center w-100 justify-content-between spacing-2">
+                                            <div class="font-bold title-h6">Товары в заказе</div>
+                                            <button class="js-toggle-order-list order-button link-blue link-icon link-blue-icon">
+                                                <span>Показать</span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-bottom"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="order-item-list">
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-tabs-content__item">
+                            <div class="d-flex flex-column row-gap-20">
+                                <div class="w-100 leaf">
+                                    <div class="d-flex flex-wrap align-items-center gap-10 spacing-2">
+                                        <div class="title-h4 font-bold">Заказ № 12345678</div>
+                                        <div class="order-label order-label-green">Завершен</div>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-20 row-gap-10 gap-lg-40 spacing-2">
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ получения</div>
+                                            <div class="text">Дата и время заказа</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Доставка</div>
+                                            <div class="text">Сумма</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">Способ оплаты</div>
+                                            <div class="text">Деловые линии</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">23.06.2022 11:36</div>
+                                            <div class="text">0 р</div>
+                                        </div>
+                                        <div class="d-flex flex-column row-gap-10 row-gap-xs-5">
+                                            <div class="color-grayText2">11 452 р</div>
+                                            <div class="text">Наличными</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-2">
+                                        <div class="color-grayText2">Адрес получателя</div>
+                                        <div class="text">Москва, ул. Академика Королёва 12</div>
+                                    </div>
+
+                                    <div class="d-flex flex-column row-gap-10 row-gap-xs-5 spacing-1">
+                                        <div class="font-bold title-h6">Последнее действие с заказом</div>
+                                        <div class="text">Информация появится после завершения оформления заказа</div>
+                                    </div>
+
+                                    <div class="order-item-list__wrapper">
+                                        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center w-100 justify-content-between spacing-2">
+                                            <div class="font-bold title-h6">Товары в заказе</div>
+                                            <button class="js-toggle-order-list order-button link-blue link-icon link-blue-icon">
+                                                <span>Показать</span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-bottom"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="order-item-list">
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <img src="{{roo}}assets/img/search-dropdown-item-1.jpg" alt="">
+                                                <div class="order-item__info d-flex flex-column align-items-start row-gap-15 row-gap-xs-10">
+                                                    <a href="#" class="text font-medium">Желоб водосточный (2000мм) D-100 (Zn)</a>
+
+                                                    <div class="d-flex align-items-center flex-wrap gap-xs-5 gap-10">
+                                                        <div>
+                                                            <span class="color-grayText2">Артикул:</span>
+                                                            <span>01001</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="color-grayText2">Кол-во</span>
+                                                            <span>1</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="order-item__price">
+                                                    <div class="title-h4 font-bold spacing-5">637 р</div>
+                                                    <div class="tdlt color-grayText1">3 430 р</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> cabinet-banner }}

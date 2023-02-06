@@ -1,0 +1,85 @@
+{{> crumbs }}
+
+<section class="section--inner">
+    <div class="container">
+        <div class="title-h1 font-bold spacing-2">Личный кабинет</div>
+
+        {{> manager }}
+
+        <div class="row row-gap-20">
+            <div class="col-md-2">
+                <nav class="d-flex flex-column align-items-start gap-25 row-gap-xs-10 text">
+                    <a href="#">Мои данные</a>
+                    <a href="#">Мои заказы</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#" class="link-blue">Выйти</a>
+                </nav>
+            </div>
+            <div class="col-md-10">
+                <div class="title-h3 font-bold spacing-3">Обратная связь</div>
+
+                <div class="row">
+                    <div class="col-lg-7 col-md-8">
+                        <div class="spacing-3 color-grayText3 lh13">Наш менеджер сделает расчёт стоимости и комплектности лесов конкретно под ваши задачи и ответит на любые вопросы</div>
+
+                        <form class="order-form row row-gap-10 spacing-3">
+                            <div class="col-12">
+                                <label class="form-field form-field--bg form-field--select">
+                                    <span class="form-field__label">Тема обращения</span>
+                                    <select class="js-select">
+                                        <option>Тема обращения</option>
+                                        <option>Тема обращения</option>
+                                        <option>Тема обращения</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-field form-field--bg form-field-textarea flex-grow-1">
+                                    <span class="form-field__label">Комментарий к заказу</span>
+                                    <textarea rows="4" placeholder="Текст комментария"></textarea>
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex flex-column gap-15 h-100">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Ваше имя</span>
+                                        <input class="form-field__input" type="text" placeholder="Семён">
+                                    </label>
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Телефон</span>
+                                        <input class="form-field__input js-tel" type="tel" placeholder="+7 911 785-52-13">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="form-field form-field--bg spacing-2">
+                                    <span class="form-field__label">Email</span>
+                                    <input class="form-field__input" type="email" placeholder="Email@example.com">
+                                </label>
+
+                                <label class="link-blue link-blue-icon link-icon ease d-flex align-items-center gap-10 curp">
+                                    <input class="file-input js-file-input js-file-input-order" type="file">
+                                    <span class="file-list">Прикрепить файл</span>
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#pin"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </form>
+
+                        <div class="row row-gap-10 align-items-sm-center">
+                            <div class="col-sm-5">
+                                <button type="submit" class="button w-100 button-primary">Опубликовать</button>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="color-grayText3 text4">Заполняя форму вы соглашаетесь <br class="d-none d-sm-inline"> на <a href="#" class="link-grayText3 und">обработку персональных данных</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> cabinet-banner }}

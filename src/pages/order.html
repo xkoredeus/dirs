@@ -1,0 +1,295 @@
+{{> crumbs }}
+
+<form class="section--inner ovh">
+    <div class="container">
+        <div class="title-h1 font-bold spacing-1">Оформление заказа</div>
+
+        <div class="row row-gap-20">
+            <div class="col-lg-8 order-2 order-lg-1">
+                <div class="title-h4 font-bold spacing-4">Способ получения</div>
+                <div class="row spacing-2 row-gap-20">
+                    <div class="col-sm-6">
+                        <label class="common-radio">
+                            <input type="radio" name="order-mode" value="1" checked>
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span class="common-radio__text">
+                                    <span class="font-medium text">Самовывоз</span>
+                                    <span class="color-grayText2">Подольск, ул. Бронницкая, 5</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="common-radio">
+                            <input type="radio" name="order-mode" value="2">
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span class="common-radio__text">
+                                    <span class="font-medium text">Доставка</span>
+                                    <span class="color-grayText2">от 1000 р</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="order-content spacing-1">
+                    <div class="order-content-1">
+                        <div class="d-flex flex-column align-items-start row-gap-10 spacing-4 flex-sm-row justify-content-between align-items-sm-center">
+                            <div class="title-h4 font-bold">Пункт выдачи заказов</div>
+
+                            <div class="d-flex align-items-center gap-10 text">
+                                <svg width="24" height="24" fill="#0061FF">
+                                    <use xlink:href="#geo"></use>
+                                </svg>
+                                <span class="font-medium">Подольск, Бронницкая, 5</span>
+                            </div>
+                        </div>
+                        <div id="map" class="map"></div>
+                    </div>
+                    <div class="order-content-2">
+                        <div class="spacing-1">
+                            <div class="title-h4 font-bold spacing-4">Адрес доставки</div>
+                            <label class="form-field form-field-border">
+                                <span class="form-field__label">Адрес доставки</span>
+                                <input class="form-field__input" type="text" placeholder="г. Великий Новгород">
+                            </label>
+                        </div>
+
+                        <div class="spacing-1">
+                            <div class="title-h4 font-bold spacing-4">Выберите транспортную компанию</div>
+
+                            <div class="row row-gap-20 spacing-3">
+                                <div class="col-12">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc" checked>
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">Экспресс-доставка нашей машиной</span>
+                                                <span class="color-grayText2 lh13">1 000 р, 1 день</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc">
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">Деловые линии</span>
+                                                <span class="color-grayText2 lh13">Бесплатно, 5-7 дней</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc">
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">ПЭК</span>
+                                                <span class="color-grayText2 lh13">1100 руб, 5-7 дней</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc">
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">Энергия</span>
+                                                <span class="color-grayText2 lh13">1100 руб, 5-7 дней</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc">
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">Желдорэкспедиция</span>
+                                                <span class="color-grayText2 lh13">1100 руб, 5-7 дней</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc">
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">GTD</span>
+                                                <span class="color-grayText2 lh13">1100 руб, 5-7 дней</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="common-radio h-100">
+                                        <input type="radio" name="tc">
+                                        <span class="common-radio__in">
+                                            <span class="common-radio__check"></span>
+                                            <span class="common-radio__text">
+                                                <span class="font-medium text">СДЭК</span>
+                                                <span class="color-grayText2 lh13">1100 руб, 5-7 дней</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="color-grayText2">Не нашли Вашу ТК?
+                                Напишите нам об этом на почту <a class="link-blue" href="mailto:it@ooodirs.ru">it@ooodirs.ru</a></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="title-h4 font-bold spacing-4">Способ оплаты</div>
+                <div class="row spacing-2 row-gap-20">
+                    <div class="col-sm-6 col-md-4">
+                        <label class="common-radio h-100">
+                            <input type="radio" name="delivery-type" checked>
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span class="common-radio__text">
+                                    <span class="font-medium text">Наличные</span>
+                                    <span class="color-grayText2 lh13">Доступно только при самовывозе</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label class="common-radio h-100">
+                            <input type="radio" name="delivery-type">
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span class="common-radio__text">
+                                    <span class="font-medium text">Банковская карта</span>
+                                    <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                        <svg width="45" height="30">
+                                            <use xlink:href="#mastercard"></use>
+                                        </svg>
+                                        <svg width="45" height="30">
+                                            <use xlink:href="#mir"></use>
+                                        </svg>
+                                        <svg width="45" height="30">
+                                            <use xlink:href="#visa"></use>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <label class="common-radio h-100">
+                            <input type="radio" name="delivery-type">
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span class="common-radio__text">
+                                    <span class="font-medium text">Доставка</span>
+                                    <span class="color-grayText2 lh13">Для компаний и юридических лиц</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="title-h4 font-bold spacing-3">Контактные данные</div>
+                <div class="order-form">
+                    <div class="row row-gap-10 spacing-3">
+                        <div class="col-sm-5">
+                            <div class="d-flex flex-column gap-15 h-100">
+                                <label class="form-field form-field-border">
+                                    <span class="form-field__label">Email</span>
+                                    <input class="form-field__input" type="email" placeholder="Email@example.com">
+                                </label>
+                                <label class="form-field form-field-border">
+                                    <span class="form-field__label">Имя</span>
+                                    <input class="form-field__input" type="text" placeholder="Семён">
+                                </label>
+                                <label class="form-field form-field-border">
+                                    <span class="form-field__label">Телефон</span>
+                                    <input class="form-field__input js-tel" type="tel" placeholder="+7 911 785-52-13">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="d-flex flex-column gap-15 h-100">
+                                <label class="form-field form-field-textarea flex-grow-1">
+                                    <textarea rows="7" placeholder="Комментарий к заказу"></textarea>
+                                </label>
+                                <label class="link-blue link-blue-icon link-icon ease d-flex align-items-center gap-10 curp">
+                                    <input class="file-input js-file-input js-file-input-order" type="file">
+                                    <span class="file-list">Прикрепить файл</span>
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#pin"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-gap-10 align-items-sm-center">
+                        <div class="col-sm-5">
+                            <button type="submit" class="button w-100 button-primary">Оформить заказ</button>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="color-grayText3 text4">Заполняя форму вы соглашаетесь <br class="d-none d-sm-inline"> на <a href="#" class="link-grayText3 und">обработку персональных данных</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-8 order-1 order-lg-2">
+                <div class="total leaf">
+                    <div class="title-h4 font-bold">Ваш заказ</div>
+                    <div class="common-table">
+                        <div class="common-table__row">
+                            <div><span>Кол-во товаров</span></div>
+                            <div>3 шт</div>
+                        </div>
+                        <div class="common-table__row">
+                            <div><span>Общий объём</span></div>
+                            <div>1.8 м³</div>
+                        </div>
+                        <div class="common-table__row">
+                            <div><span>Общий вес</span></div>
+                            <div>204 кг</div>
+                        </div>
+                        <div class="common-table__row">
+                            <div><span>Стоимость товаров</span></div>
+                            <div>45 928 р</div>
+                        </div>
+                        <div class="common-table__row">
+                            <div><span>Скидка</span></div>
+                            <div class="color-orange">3 499 р</div>
+                        </div>
+                        <div class="common-table__row">
+                            <div><span>Самовывоз</span></div>
+                            <div>бесплатно</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-start gap-5 w-100">
+                        <div class="color-grayText2">итоговая стоимость</div>
+                        <div class="font-bold title-h2">45 928 р</div>
+                        <div class="color-grayText2">доступные способы получения заказа можно выбрать при оформлении</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</form>

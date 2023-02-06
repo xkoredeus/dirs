@@ -1,0 +1,280 @@
+<div id="popup-call" class="popup__wrapper" style="display: none">
+    <div class="popup__in">
+        <div class="popup-title__wrapper">
+            <div class="title-h4 font-bold spacing-3">Обратный звонок</div>
+        </div>
+
+        <div class="title-h6 lh14 spacing-2">Оставьте заявку мы рассчитаем стоимость установки и договоримся о выезде мастера</div>
+
+        <form class="d-flex flex-column w-100 gap-15 gap-xs-10">
+            <label class="form-field form-field--bg">
+                <span class="form-field__label">Ваш телефон</span>
+                <input type="tel" class="form-field__input js-tel" placeholder="+7 963 458-78-21">
+            </label>
+            <label class="form-field form-field--bg">
+                <span class="form-field__label">Электронная почта</span>
+                <input type="email" class="form-field__input" placeholder="email@example.com">
+            </label>
+
+            <div class="d-flex align-items-sm-center flex-column flex-sm-row gap-20">
+                <button class="button button-secondary" type="submit">Оставить заявку</button>
+                <span class="color-gray2 text3">Заполняя форму вы соглашаетесь <br class="d-none d-sm-inline"> на <a href="#" class="link-gray2 und">обработку персональных данных</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="popup-search" class="popup__wrapper popup__wrapper--search" style="display: none">
+    <div class="popup__in">
+        <div class="popup-title__wrapper">
+            <div class="title-h4 font-bold spacing-3">Введите поисковой запрос</div>
+
+            <form class="popup-search-form">
+                <label class="form-field form-field--bg form-field--search">
+                    <svg class="form-field--search__icon" width="20" height="20">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                    <input class="form-field--search__input" type="text" placeholder="Поиск по сайту">
+                </label>
+
+                {{> search-dropdown }}
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div id="popup-face" class="popup__wrapper popup__wrapper--xl" style="display: none">
+    <div class="popup__in">
+        <div class="popup-title__wrapper">
+            <div class="title-h4 font-bold spacing-2">Фасад №1</div>
+        </div>
+        <form class="w-100">
+            <div class="font-medium spacing-4">Выберите тип лесов</div>
+            <div class="row row-gap-20 row-gap-xs-10 spacing-3">
+                <div class="col-md-4 col-6">
+                    <label class="checkbox-html">
+                        <input type="radio" name="flooring" checked>
+                        <span class="checkbox-html__in d-flex flex-column flex-md-row align-items-center gap-10 gap-xs-5">
+                            <img class="img-responsive framing-type-checkbox__picture" src="{{root}}assets/img/flooring-1.jpg" alt="Деревянный">
+
+                            <span class="d-flex flex-column gap-5">
+                                <span>Деревянный</span>
+                                <span class="text-4 color-grayText2">1,23 х 0,45 (25 мм)</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <div class="col-md-4 col-6">
+                    <label class="checkbox-html">
+                        <input type="radio" name="flooring">
+                        <span class="checkbox-html__in d-flex flex-column flex-md-row align-items-center gap-10 gap-xs-5">
+                            <img class="img-responsive framing-type-checkbox__picture" src="{{root}}assets/img/flooring-2.jpg" alt="Металлический">
+
+                            <span class="d-flex flex-column gap-5">
+                                <span>Металлический</span>
+                                <span class="text-4 color-grayText2">1,23 х 0,45 (25 мм)</span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap row-gap-20 gap-20 gap-lg-40 row-gap-xs-10 spacing-3">
+                <div class="calc-number-item">
+                    <div class="spacing-5 font-medium">Ярусов ограждений</div>
+                    <div class="form-number">
+                        <button class="form-number__button js-form-number-minus">
+                            <svg width="24" height="24">
+                                <use xlink:href="#minus"></use>
+                            </svg>
+                        </button>
+                        <input class="form-number__input" type="number" value="10" min="1" max="150">
+                        <button class="form-number__button js-form-number-plus">
+                            <svg width="24" height="24">
+                                <use xlink:href="#plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="calc-number-item">
+                    <div class="spacing-5 font-medium">Отбортовочный элемент</div>
+                    <div class="form-number">
+                        <button class="form-number__button js-form-number-minus">
+                            <svg width="24" height="24">
+                                <use xlink:href="#minus"></use>
+                            </svg>
+                        </button>
+                        <input class="form-number__input" type="number" value="10" min="1" max="150">
+                        <button class="form-number__button js-form-number-plus">
+                            <svg width="24" height="24">
+                                <use xlink:href="#plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="calc-number-item">
+                    <div class="spacing-5 font-medium">Консоли</div>
+                    <div class="form-number">
+                        <button class="form-number__button js-form-number-minus">
+                            <svg width="24" height="24">
+                                <use xlink:href="#minus"></use>
+                            </svg>
+                        </button>
+                        <input class="form-number__input" type="number" value="10" min="1" max="150">
+                        <button class="form-number__button js-form-number-plus">
+                            <svg width="24" height="24">
+                                <use xlink:href="#plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-gap-20 spacing-2">
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Длина ячейки</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="cell-length" checked>
+                            <span class="calc-form-group__item-text">1 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="cell-length">
+                            <span class="calc-form-group__item-text">2 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="cell-length">
+                            <span class="calc-form-group__item-text">3 м</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Длина стойки</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="length" checked>
+                            <span class="calc-form-group__item-text">3 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="length">
+                            <span class="calc-form-group__item-text">4 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="length">
+                            <span class="calc-form-group__item-text">5 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="length">
+                            <span class="calc-form-group__item-text">6 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="length">
+                            <span class="calc-form-group__item-text">7 м</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Домкрат/подпятник</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="axle" checked>
+                            <span class="calc-form-group__item-text">Домкрат</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="axle">
+                            <span class="calc-form-group__item-text">Подпятник</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Кронштейн / стеновая опора</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="carrier" checked>
+                            <span class="calc-form-group__item-text">Кронштейн</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="carrier">
+                            <span class="calc-form-group__item-text">Стеновая опора</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Планка под кронштейн</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="ledge-axle" checked>
+                            <span class="calc-form-group__item-text">Нет</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="ledge-axle">
+                            <span class="calc-form-group__item-text">1 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="ledge-axle">
+                            <span class="calc-form-group__item-text">2 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="ledge-axle">
+                            <span class="calc-form-group__item-text">3 м</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Стабилизационная опора</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="bent" checked>
+                            <span class="calc-form-group__item-text">Нет</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="bent">
+                            <span class="calc-form-group__item-text">1 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="bent">
+                            <span class="calc-form-group__item-text">2 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="bent">
+                            <span class="calc-form-group__item-text">3 м</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="font-medium spacing-4">Шаг фланца</div>
+                    <div class="calc-form-group">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="step" checked>
+                            <span class="calc-form-group__item-text">3 м</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="step">
+                            <span class="calc-form-group__item-text">4 м</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6 align-self-sm-end">
+                    <label class="switcher mb-sm-3">
+                        <input type="checkbox">
+                        <span class="switcher__in"></span>
+                        <span class="switcher__text">Стартовый элемент</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row gap-30 row-gap-10">
+                <button type="submit" class="w-xs-100 button button-primary">Сохранить</button>
+
+                <button class="w-xs-100 link-grayText1 font-medium">Удалить фасад</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>

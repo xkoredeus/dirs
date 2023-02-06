@@ -1,0 +1,1005 @@
+{{> crumbs }}
+
+<section class="section--inner">
+    <div class="container">
+        <div class="row row-gap-30 row-gap-xs-20 align-items-md-center text-sm-center">
+            <div class="col-md-6">
+                <h1 class="font-bold title-h1 spacing-4">Аренда вышек тура от&nbsp;200&nbsp;р в&nbsp;Москве и Московской области!</h1>
+                <div class="text spacing-1">Сдаём вышки тура в аренду от 3х дней </div>
+
+                <div class="d-flex align-items-md-center align-items-center flex-column flex-md-row gap-xs-10 gap-30">
+                    <button class="button button-primary js-button-anchor" data-to="#calculator">Рассчитать стоимость</button>
+
+                    <button class="link-icon link-blue link-blue-icon">
+                        <svg>
+                            <use xlink:href="#arrow-bottom"></use>
+                        </svg>
+                        <span>Файл-заявка для расчета</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <img class="img-responsive max-height-md-220" src="{{root}}assets/img/rent-scaffold.jpg" alt="Аренда строительных лесов">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> advantages-rent }}
+
+<section class="section--inner" id="calculator">
+    <div class="container">
+        <form class="leaf">
+            <div class="title-h3 font-bold spacing-2">Калькулятор аренды</div>
+
+            <div class="row row-gap-20">
+                <div class="col-lg-7">
+                    <div class="text spacing-4">Размер площадки</div>
+                    <div class="calc-form-group calc-form-group-white spacing-2">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="area" checked>
+                            <span class="calc-form-group__item-text">0,7 х 1,6</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="area">
+                            <span class="calc-form-group__item-text">1,2 х 2</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="area">
+                            <span class="calc-form-group__item-text">2 х 2</span>
+                        </label>
+                    </div>
+
+                    <div class="text spacing-4">Максимальная рабочая высота, м</div>
+                    <div class="calc-form-group calc-form-group-white spacing-2">
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height" checked>
+                            <span class="calc-form-group__item-text">3,5</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height">
+                            <span class="calc-form-group__item-text">4,7</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height">
+                            <span class="calc-form-group__item-text">5,9</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height">
+                            <span class="calc-form-group__item-text">7,2</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height">
+                            <span class="calc-form-group__item-text">8,4</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height">
+                            <span class="calc-form-group__item-text">20,7</span>
+                        </label>
+                        <label class="calc-form-group__item">
+                            <input type="radio" name="height">
+                            <span class="calc-form-group__item-text">21,8</span>
+                        </label>
+                    </div>
+
+                    <div class="d-flex flex-wrap row-gap-10 gap-30 align-items-lg-end">
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="text spacing-5">Количество</div>
+                            <div class="form-number form-number-small form-number-white-bg">
+                                <button class="form-number__button js-form-number-minus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-number__input" type="number" value="1" min="1" max="150">
+                                <button class="form-number__button js-form-number-plus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="spacing-5">Срок (дней)</div>
+                            <div class="form-number form-number-small form-number-white-bg">
+                                <button class="form-number__button js-form-number-minus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-number__input" type="number" value="30" min="1" max="150">
+                                <button class="form-number__button js-form-number-plus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="spacing-5 text color-grayText3">Цена аренды</div>
+                            <div class="font-bold title-h4">200 р/день</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-sm-center align-items-start flex-column flex-sm-row gap-30 row-gap-20 pl-lg-3">
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="spacing-5 text">Полная стоимость</div>
+                            <div class="font-bold title-h2 spacing-3">16 000 р</div>
+
+                            <div class="d-flex align-items-center gap-10 color-green spacing-3">
+                                <svg width="24" height="24" fill="#039F1C">
+                                    <use xlink:href="#replay"></use>
+                                </svg>
+                                <span class="text">Вернём 10 000 р залога</span>
+                            </div>
+
+                            <button type="submit" class="button button-orange">Оформить заказ</button>
+                        </div>
+
+                        <img class="img-responsive calc-rent-img" src="{{root}}assets/img/calc-rent-img.jpg" alt="Калькулятор аренды вышек тура">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="section--inner">
+    <div class="container">
+        <div class="title-h3 font-bold spacing-2">Аренда вышек тура</div>
+
+        <div class="leaf spacing-3 scaffold">
+            <div class="scaffold-picture">
+                <img src="{{root}}assets/img/scaffold-1.jpg" alt="Вышка тура ВСР-1">
+            </div>
+
+            <div class="row row-gap-20">
+                <div class="col-12 title-h5 font-medium">Вышка тура ВСР-1</div>
+                <div class="col-12">
+                    <div class="row row-gap-8">
+                        <div class="col-sm-6">
+                            <div class="common-table">
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота, м</span>
+                                    </div>
+                                    <div class="color-dark">от 2.7 до 7.6</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Размер площадки, м</span>
+                                    </div>
+                                    <div class="color-dark">0.7*1.6</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Достигаемая высота, м</span>
+                                    </div>
+                                    <div class="color-dark">от 3.3 до 8.2</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Макс нагрузка на вышку, кг</span>
+                                    </div>
+                                    <div class="color-dark">250</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота секции вышки, м</span>
+                                    </div>
+                                    <div class="color-dark">1.23</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="common-table">
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота ограждения, м</span>
+                                    </div>
+                                    <div class="color-dark">1,1</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Домкраты в основании, шт</span>
+                                    </div>
+                                    <div class="color-dark">4</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Материал</span>
+                                    </div>
+                                    <div class="color-dark">сталь</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Труба, мм</span>
+                                    </div>
+                                    <div class="color-dark">42х1.5</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Вес, кг</span>
+                                    </div>
+                                    <div class="color-dark">от 55 до 111</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column row-gap-10 gap-30 gap-lg-40 flex-sm-row align-items-sm-center">
+                        <button class="button button-outlined w-xs-100">Взять в аренду</button>
+                        <div class="d-flex align-items-center gap-10 gap-lg-40">
+                            <div class="font-bold title-h5">от 200 р</div>
+                            <div class="text">от 7 дней</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leaf spacing-3 scaffold">
+            <div class="scaffold-picture">
+                <img src="{{root}}assets/img/scaffold-2.jpg" alt="Вышка тура ВСР-4">
+            </div>
+
+            <div class="row row-gap-20">
+                <div class="col-12 title-h5 font-medium">Вышка тура ВСР-4</div>
+                <div class="col-12">
+                    <div class="row row-gap-8">
+                        <div class="col-sm-6">
+                            <div class="common-table">
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота, м</span>
+                                    </div>
+                                    <div class="color-dark">от 2.7 до 7.6</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Размер площадки, м</span>
+                                    </div>
+                                    <div class="color-dark">0.7*1.6</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Достигаемая высота, м</span>
+                                    </div>
+                                    <div class="color-dark">от 3.3 до 8.2</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Макс нагрузка на вышку, кг</span>
+                                    </div>
+                                    <div class="color-dark">250</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота секции вышки, м</span>
+                                    </div>
+                                    <div class="color-dark">1.23</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="common-table">
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота ограждения, м</span>
+                                    </div>
+                                    <div class="color-dark">1,1</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Домкраты в основании, шт</span>
+                                    </div>
+                                    <div class="color-dark">4</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Материал</span>
+                                    </div>
+                                    <div class="color-dark">сталь</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Труба, мм</span>
+                                    </div>
+                                    <div class="color-dark">42х1.5</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Вес, кг</span>
+                                    </div>
+                                    <div class="color-dark">от 55 до 111</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column row-gap-10 gap-30 gap-lg-40 flex-sm-row align-items-sm-center">
+                        <button class="button button-outlined w-xs-100">Взять в аренду</button>
+                        <div class="d-flex align-items-center gap-10 gap-lg-40">
+                            <div class="font-bold title-h5">от 200 р</div>
+                            <div class="text">от 7 дней</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leaf spacing-3 scaffold">
+            <div class="scaffold-picture">
+                <img src="{{root}}assets/img/scaffold-3.jpg" alt="Вышка тура ВСР-8">
+            </div>
+
+            <div class="row row-gap-20">
+                <div class="col-12 title-h5 font-medium">Вышка тура ВСР-7</div>
+                <div class="col-12">
+                    <div class="row row-gap-8">
+                        <div class="col-sm-6">
+                            <div class="common-table">
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота, м</span>
+                                    </div>
+                                    <div class="color-dark">от 2.7 до 7.6</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Размер площадки, м</span>
+                                    </div>
+                                    <div class="color-dark">0.7*1.6</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Достигаемая высота, м</span>
+                                    </div>
+                                    <div class="color-dark">от 3.3 до 8.2</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Макс нагрузка на вышку, кг</span>
+                                    </div>
+                                    <div class="color-dark">250</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота секции вышки, м</span>
+                                    </div>
+                                    <div class="color-dark">1.23</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="common-table">
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Высота ограждения, м</span>
+                                    </div>
+                                    <div class="color-dark">1,1</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Домкраты в основании, шт</span>
+                                    </div>
+                                    <div class="color-dark">4</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Материал</span>
+                                    </div>
+                                    <div class="color-dark">сталь</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Труба, мм</span>
+                                    </div>
+                                    <div class="color-dark">42х1.5</div>
+                                </div>
+                                <div class="common-table__row">
+                                    <div>
+                                        <span>Вес, кг</span>
+                                    </div>
+                                    <div class="color-dark">от 55 до 111</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column row-gap-10 gap-30 gap-lg-40 flex-sm-row align-items-sm-center">
+                        <button class="button button-outlined w-xs-100">Взять в аренду</button>
+                        <div class="d-flex align-items-center gap-10 gap-lg-40">
+                            <div class="font-bold title-h5">от 200 р</div>
+                            <div class="text">от 7 дней</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section--inner pb-0">
+    <div class="container">
+        <div class="title-h3 font-bold spacing-2">Прайс-лист аренды вышек тура</div>
+
+        <section class="section--inner pt-0">
+            <div class="d-flex flex-column flex-lg-row row-gap-20 gap-15 w-100 align-items-lg-center justify-content-between spacing-2">
+                <div class="d-flex flex-column align-items-start gap-10">
+                    <div class="title-h5 font-medium">Вышка тура ВСР-1 0,7х1,6</div>
+                    <button class="link-blue font-medium">Заказать аренду</button>
+                </div>
+                <div class="d-flex flex-wrap gap-10">
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Длина рабочей площадки</div>
+                        <div class="title-h5 font-medium">1,6 м</div>
+                    </div>
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Ширина рабочей площадки</div>
+                        <div class="title-h5 font-medium">70 см</div>
+                    </div>
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Минимальный срок аренды</div>
+                        <div class="title-h5 font-medium">7 дней</div>
+                    </div>
+                </div>
+            </div>
+            <div class="table__wrapper">
+                <div class="table table-rent">
+                    <div class="table__header">
+                        <div class="table__row align-items-center">
+                            <div>Комплектация</div>
+                            <div>Высота рабочая</div>
+                            <div>Высота полная</div>
+                            <div>Высота<br> до настила</div>
+                            <div>Вес, кг</div>
+                            <div>Объем, м²</div>
+                            <div>Аренда<br> до 5 суток</div>
+                            <div>Аренда<br> от 7 суток</div>
+                            <div>Аренда<br> от 15 суток</div>
+                            <div>Сумма<br> залога</div>
+                        </div>
+                    </div>
+                    <div class="table__body text">
+                        <div class="table__row">
+                            <div>Б/блок + 1 секция</div>
+                            <div>3,5</div>
+                            <div>2,7</div>
+                            <div>1,6</div>
+                            <div>80</div>
+                            <div>0,45</div>
+                            <div>400 р</div>
+                            <div>300 р</div>
+                            <div>200 р</div>
+                            <div>10 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 2 секции</div>
+                            <div>4,7</div>
+                            <div>3,9</div>
+                            <div>2,8</div>
+                            <div>98</div>
+                            <div>0,6</div>
+                            <div>500 р</div>
+                            <div>400 р</div>
+                            <div>300 р</div>
+                            <div>12 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 3 секции</div>
+                            <div>5,9</div>
+                            <div>5,1</div>
+                            <div>4,0</div>
+                            <div>116</div>
+                            <div>0,75</div>
+                            <div>600 р</div>
+                            <div>500	р</div>
+                            <div>400 р</div>
+                            <div>15 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 4 секции</div>
+                            <div>7,2</div>
+                            <div>6,4</div>
+                            <div>5,3</div>
+                            <div>134</div>
+                            <div>0,9</div>
+                            <div>700 р</div>
+                            <div>600 р</div>
+                            <div>500 р</div>
+                            <div>18 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 5 секций</div>
+                            <div>8,4</div>
+                            <div>7,6</div>
+                            <div>6,5</div>
+                            <div>152</div>
+                            <div>1,05</div>
+                            <div>800 р</div>
+                            <div>650 р</div>
+                            <div>600 р</div>
+                            <div>59 000 р</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--inner">
+            <div class="d-flex flex-column flex-lg-row row-gap-20 gap-15 w-100 align-items-lg-center justify-content-between spacing-2">
+                <div class="d-flex flex-column align-items-start gap-10">
+                    <div class="title-h5 font-medium">Вышка тура ВСР-4 1,2*2</div>
+                    <button class="link-blue font-medium">Заказать аренду</button>
+                </div>
+                <div class="d-flex flex-wrap gap-10">
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Длина рабочей площадки</div>
+                        <div class="title-h5 font-medium">2 м</div>
+                    </div>
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Ширина рабочей площадки</div>
+                        <div class="title-h5 font-medium">1,2 м</div>
+                    </div>
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Минимальный срок аренды</div>
+                        <div class="title-h5 font-medium">3 дня</div>
+                    </div>
+                </div>
+            </div>
+            <div class="table__wrapper">
+                <div class="table table-rent">
+                    <div class="table__header">
+                        <div class="table__row align-items-center">
+                            <div>Комплектация</div>
+                            <div>Высота рабочая</div>
+                            <div>Высота полная</div>
+                            <div>Высота<br> до настила</div>
+                            <div>Вес, кг</div>
+                            <div>Объем, м²</div>
+                            <div>Аренда<br> до 5 суток</div>
+                            <div>Аренда<br> от 7 суток</div>
+                            <div>Аренда<br> от 15 суток</div>
+                            <div>Сумма<br> залога</div>
+                        </div>
+                    </div>
+                    <div class="table__body text">
+                        <div class="table__row">
+                            <div>Б/блок + 1 секция</div>
+                            <div>3,5</div>
+                            <div>2,7</div>
+                            <div>1,6</div>
+                            <div>102</div>
+                            <div>0,6</div>
+                            <div>500	р</div>
+                            <div>400 р</div>
+                            <div>300 р</div>
+                            <div>13 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 2 секции</div>
+                            <div>4,7</div>
+                            <div>3,9</div>
+                            <div>2,8</div>
+                            <div>124</div>
+                            <div>0,8</div>
+                            <div>600 р</div>
+                            <div>500 р</div>
+                            <div>350 р</div>
+                            <div>16 500 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 3 секции</div>
+                            <div>5,9</div>
+                            <div>5,1</div>
+                            <div>4,0</div>
+                            <div>146</div>
+                            <div>1</div>
+                            <div>650 р</div>
+                            <div>550	р</div>
+                            <div>400 р</div>
+                            <div>18 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 4 секции</div>
+                            <div>7,2</div>
+                            <div>6,4</div>
+                            <div>5,3</div>
+                            <div>168</div>
+                            <div>1,2</div>
+                            <div>700	р</div>
+                            <div>550 р</div>
+                            <div>450 р</div>
+                            <div>22 500 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 5 секций</div>
+                            <div>8,4</div>
+                            <div>7,6</div>
+                            <div>6,5</div>
+                            <div>190</div>
+                            <div>1,4</div>
+                            <div>750	р</div>
+                            <div>600	р</div>
+                            <div>500	р</div>
+                            <div>24 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 6 секций</div>
+                            <div>9,6</div>
+                            <div>8,8</div>
+                            <div>7,7</div>
+                            <div>212</div>
+                            <div>1,6</div>
+                            <div>800	р</div>
+                            <div>650	р</div>
+                            <div>550 р</div>
+                            <div>27 500 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 7 секций</div>
+                            <div>10,8</div>
+                            <div>10,0</div>
+                            <div>8,9</div>
+                            <div>234</div>
+                            <div>1,8</div>
+                            <div>850	р</div>
+                            <div>700 р</div>
+                            <div>600 р</div>
+                            <div>29 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 8 секций</div>
+                            <div>12,1</div>
+                            <div>11,3</div>
+                            <div>10,2</div>
+                            <div>256</div>
+                            <div>2</div>
+                            <div>900	р</div>
+                            <div>750	р</div>
+                            <div>650 р</div>
+                            <div>32 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 9 секций</div>
+                            <div>13,3</div>
+                            <div>12,5</div>
+                            <div>11,4</div>
+                            <div>278</div>
+                            <div>2,2</div>
+                            <div>950	р</div>
+                            <div>800	р</div>
+                            <div>700 р</div>
+                            <div>34 500 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 10 секций</div>
+                            <div>14,6</div>
+                            <div>13,8</div>
+                            <div>12,7</div>
+                            <div>300</div>
+                            <div>2,4</div>
+                            <div>1 000	р</div>
+                            <div>850 р</div>
+                            <div>750 р</div>
+                            <div>37 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 11 секций</div>
+                            <div>15,8</div>
+                            <div>15,0</div>
+                            <div>13,9</div>
+                            <div>322</div>
+                            <div>2,6</div>
+                            <div>1 050	р</div>
+                            <div>900 р</div>
+                            <div>800 р</div>
+                            <div>39 500 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 12 секций</div>
+                            <div>17,0</div>
+                            <div>16,2</div>
+                            <div>15,1</div>
+                            <div>344</div>
+                            <div>2,8</div>
+                            <div>1 100	р</div>
+                            <div>950 р</div>
+                            <div>850 р</div>
+                            <div>41 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 13 секций</div>
+                            <div>18,2</div>
+                            <div>17,4</div>
+                            <div>16,3</div>
+                            <div>366</div>
+                            <div>3</div>
+                            <div>1 150	р</div>
+                            <div>1 000	р</div>
+                            <div>900 р</div>
+                            <div>44 500 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 14 секций</div>
+                            <div>19,5</div>
+                            <div>18,7</div>
+                            <div>17,6</div>
+                            <div>388</div>
+                            <div>3,2</div>
+                            <div>1 200	р</div>
+                            <div>1 050 р</div>
+                            <div>950 р</div>
+                            <div>46 000 р</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--inner">
+            <div class="d-flex flex-column flex-lg-row row-gap-20 gap-15 w-100 align-items-lg-center justify-content-between spacing-2">
+                <div class="d-flex flex-column align-items-start gap-10">
+                    <div class="title-h5 font-medium">Вышка тура ВСР-7 2*2</div>
+                    <button class="link-blue font-medium">Заказать аренду</button>
+                </div>
+                <div class="d-flex flex-wrap gap-10">
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Длина рабочей площадки</div>
+                        <div class="title-h5 font-medium">2 м</div>
+                    </div>
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Ширина рабочей площадки</div>
+                        <div class="title-h5 font-medium">2 м</div>
+                    </div>
+                    <div class="leaf-small bg-gray rent-card">
+                        <div class="color-grayText3">Минимальный срок аренды</div>
+                        <div class="title-h5 font-medium">3 дня</div>
+                    </div>
+                </div>
+            </div>
+            <div class="table__wrapper">
+                <div class="table table-rent">
+                    <div class="table__header">
+                        <div class="table__row align-items-center">
+                            <div>Комплектация</div>
+                            <div>Высота рабочая</div>
+                            <div>Высота полная</div>
+                            <div>Высота<br> до настила</div>
+                            <div>Вес, кг</div>
+                            <div>Объем, м²</div>
+                            <div>Аренда<br> до 5 суток</div>
+                            <div>Аренда<br> от 7 суток</div>
+                            <div>Аренда<br> от 15 суток</div>
+                            <div>Сумма<br> залога</div>
+                        </div>
+                    </div>
+                    <div class="table__body text">
+                        <div class="table__row">
+                            <div>Б/блок + 1 секция</div>
+                            <div>3,5</div>
+                            <div>2,7</div>
+                            <div>1,6</div>
+                            <div>133</div>
+                            <div>0,72</div>
+                            <div>550</div>
+                            <div>450 р</div>
+                            <div>400 р</div>
+                            <div>17 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 2 секции</div>
+                            <div>4,7</div>
+                            <div>3,9</div>
+                            <div>2,8</div>
+                            <div>161</div>
+                            <div>1</div>
+                            <div>600 р</div>
+                            <div>550 р</div>
+                            <div>450 р</div>
+                            <div>19 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 3 секции</div>
+                            <div>5,9</div>
+                            <div>5,1</div>
+                            <div>4,0</div>
+                            <div>189</div>
+                            <div>1,28</div>
+                            <div>750 р</div>
+                            <div>650 р</div>
+                            <div>500 р</div>
+                            <div>22 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 4 секции</div>
+                            <div>7,2</div>
+                            <div>6,4</div>
+                            <div>5,3</div>
+                            <div>217</div>
+                            <div>1,56</div>
+                            <div>800 р</div>
+                            <div>700 р</div>
+                            <div>550 р</div>
+                            <div>25 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 5 секций</div>
+                            <div>8,4</div>
+                            <div>7,6</div>
+                            <div>6,5</div>
+                            <div>245</div>
+                            <div>1,84</div>
+                            <div>850 р</div>
+                            <div>750 р</div>
+                            <div>600 р</div>
+                            <div>28 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 6 секций</div>
+                            <div>9,6</div>
+                            <div>8,8</div>
+                            <div>7,7</div>
+                            <div>273</div>
+                            <div>2,12</div>
+                            <div>900 р</div>
+                            <div>850 р</div>
+                            <div>650 р</div>
+                            <div>31 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 7 секций</div>
+                            <div>10,8</div>
+                            <div>10,0</div>
+                            <div>8,9</div>
+                            <div>301</div>
+                            <div>2,4</div>
+                            <div>950 р</div>
+                            <div>900 р</div>
+                            <div>700 р</div>
+                            <div>34 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 8 секций</div>
+                            <div>12,1</div>
+                            <div>11,3</div>
+                            <div>10,2</div>
+                            <div>329</div>
+                            <div>2,68</div>
+                            <div>1 000 р</div>
+                            <div>950 р</div>
+                            <div>750	р</div>
+                            <div>36 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 9 секций</div>
+                            <div>13,3</div>
+                            <div>12,5</div>
+                            <div>11,4</div>
+                            <div>358</div>
+                            <div>2,96</div>
+                            <div>1 050 р</div>
+                            <div>1 000	р</div>
+                            <div>800 р</div>
+                            <div>39 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 10 секций</div>
+                            <div>14,6</div>
+                            <div>13,8</div>
+                            <div>12,7</div>
+                            <div>386</div>
+                            <div>3,24</div>
+                            <div>1 100 р</div>
+                            <div>1 050	р</div>
+                            <div>850	р</div>
+                            <div>42 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 11 секций</div>
+                            <div>15,8</div>
+                            <div>15,0</div>
+                            <div>13,9</div>
+                            <div>413</div>
+                            <div>3,52</div>
+                            <div>1 150 р</div>
+                            <div>1 100	р</div>
+                            <div>900 р</div>
+                            <div>45 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 12 секций</div>
+                            <div>17,0</div>
+                            <div>16,2</div>
+                            <div>15,1</div>
+                            <div>441</div>
+                            <div>3,8</div>
+                            <div>1 200 р</div>
+                            <div>1 150	р</div>
+                            <div>950 р</div>
+                            <div>48 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 13 секций</div>
+                            <div>18,2</div>
+                            <div>17,4</div>
+                            <div>16,3</div>
+                            <div>469</div>
+                            <div>4,08</div>
+                            <div>1 250 р</div>
+                            <div>1 200	р</div>
+                            <div>1 000	р</div>
+                            <div>51 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 14 секций</div>
+                            <div>19,5</div>
+                            <div>18,7</div>
+                            <div>17,6</div>
+                            <div>497</div>
+                            <div>4,36</div>
+                            <div>1 300 р</div>
+                            <div>1 250	р</div>
+                            <div>1 050	р</div>
+                            <div>53 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 15 секций</div>
+                            <div>20,7</div>
+                            <div>19,9</div>
+                            <div>18,8</div>
+                            <div>525</div>
+                            <div>4,64</div>
+                            <div>1 350 р</div>
+                            <div>1 300	р</div>
+                            <div>1 100	р</div>
+                            <div>56 000 р</div>
+                        </div>
+                        <div class="table__row">
+                            <div>Б/блок + 16 секций</div>
+                            <div>21,8</div>
+                            <div>21,0</div>
+                            <div>19,9</div>
+                            <div>553</div>
+                            <div>4,92</div>
+                            <div>1 400 р</div>
+                            <div>1 350	р</div>
+                            <div>1 150	р</div>
+                            <div>59 000 р</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+{{> steps }}
+
+{{> feed-2 }}
+
+{{> reviews }}
+
+{{> certs }}
+
+<section class="section--inner ovh">
+    <div class="container">
+        <div class="title-h3 font-bold spacing-1">С вами работают профессионалы</div>
+
+        {{> persons }}
+
+    </div>
+</section>
+
+{{> seo }}
+
+{{> services }}
+
+{{> question-section }}
+
+{{> news }}

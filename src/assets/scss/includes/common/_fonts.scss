@@ -1,0 +1,23 @@
+$font-thin: 'Onest-Thin';
+$font-light: 'Onest-Light';
+$font-regular: 'Onest-Regular';
+$font-medium: 'Onest-Medium';
+$font-bold: 'Onest-Bold';
+$font-extrabold: 'Onest-ExtraBold';
+$font-black: 'Onest-Black';
+
+.font-thin { font-family: $font-thin; }
+.font-light { font-family: $font-light; }
+.font-regular { font-family: $font-regular; }
+.font-medium { font-family: $font-medium; }
+.font-bold { font-family: $font-bold; }
+.font-extrabold { font-family: $font-extrabold; }
+.font-black { font-family: $font-black; }
+
+@mixin font-thin { font-family: $font-thin; }
+@mixin font-light { font-family: $font-light; }
+@mixin font-regular { font-family: $font-regular; }
+@mixin font-medium { font-family: $font-medium; }
+@mixin font-bold { font-family: $font-bold; }
+@mixin font-extrabold { font-family: $font-extrabold; }
+@mixin font-black { font-family: $font-black; }

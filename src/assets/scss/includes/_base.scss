@@ -1,0 +1,289 @@
+@import "mixins";
+@import "fonts";
+@import "common/breakpoints";
+@import "common/fonts";
+@import "common/titles";
+@import "common/colors";
+@import "common/one-classes";
+@import "common/selections";
+@import "common/states";
+@import "common/inputs";
+@import "common/checkbox";
+@import "common/section";
+@import "common/swiper-custom";
+@import "common/buttons";
+@import "common/popup";
+
+html, body {
+  position: relative;
+  font-family: $font-regular, Roboto, sans-serif;
+  @include text2;
+  line-height: 1.2;
+  color: $dark;
+  background-color: $white;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+
+  @include scroll;
+
+  &.is-loading {
+    overflow: hidden;
+
+    @include rmin($breakpoint-2) {
+      padding-right: 15px;
+    }
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+/* Custom animation */
+.fancybox-slide--html {
+  padding: 0;
+}
+.fancybox-fx-slide-in-in.fancybox-slide--next,
+.fancybox-fx-slide-in-in.fancybox-slide--previous {
+  transform: translateX(100%);
+}
+
+.fancybox-fx-slide-in-in.fancybox-slide--current {
+  transform: translateX(0);
+}
+
+sup {
+  font-size: 0.65em;
+  top: -0.7em;
+}
+
+.list {
+  margin-left: 0;
+  padding-left: 25px;
+
+  li {
+    position: relative;
+    margin-bottom: 15px;
+    list-style-type: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $primary;
+      top: 8px;
+      left: -22px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+      @include r($breakpoint-2) {
+        top: 4px;
+      }
+    }
+  }
+}
+
+
+.list-cross {
+  padding-left: 0;
+
+  li {
+    position: relative;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 32px;
+
+    @include r($breakpoint-35) {
+      padding-left: 25px;
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      @include ct;
+      left: 0;
+      top: -3px;
+      background-image: url('../img/cross.svg');
+
+      @include r($breakpoint-35) {
+        top: -4px;
+      }
+    }
+  }
+}
+
+.list-check {
+  padding-left: 0;
+
+  li {
+    position: relative;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 32px;
+
+    @include r($breakpoint-35) {
+      padding-left: 25px;
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 16px;
+      height: 16px;
+      @include ct;
+      left: 0;
+      top: 0;
+      background-image: url('../img/check.svg');
+
+      @include r($breakpoint-35) {
+        top: -1px;
+      }
+    }
+  }
+}
+
+.list-number {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 27px;
+
+  li {
+    position: relative;
+    counter-increment: my-awesome-counter;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: counter(my-awesome-counter);
+      color: $primary;
+      font-family: $font-bold;
+      font-size: 16px;
+      position: absolute;
+      left: -23px;
+      top: 0;
+    }
+  }
+}
+
+$container: 1236px;
+
+@mixin container {
+  max-width: $container;
+}
+.container {
+  @include container;
+
+  //@include r($breakpoint-2) {
+  //  padding-left: 5px;
+  //  padding-right: 5px;
+  //}
+}
+
+
+
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &.blur {
+    &::before {
+      opacity: .5;
+      visibility: visible;
+    }
+  }
+
+  &::before {
+    @include ovl;
+    background-color: $dark;
+    z-index: 11;
+    @include ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @include r($breakpoint-2) {
+    overflow: hidden;
+  }
+
+  @include r($breakpoint-3) {
+    padding-top: calc(55px + 25px);
+    padding-bottom: 65px;
+  }
+
+  @include r($breakpoint-4) {
+    padding-top: calc(46px + 25px);
+    padding-bottom: 58px;
+  }
+
+  &__in {
+    position: relative;
+    flex-grow: 1;
+  }
+}
+
+.tooltip-link {
+  cursor: pointer;
+  min-width: 20px;
+}
+
+.svg-sprite {
+  position: absolute;
+  bottom: 0;
+}
+
+a {
+  color: $dark;
+  @include ease-long;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.mdc-tooltip {
+
+  .mdc-tooltip__surface {
+    max-width: 632px;
+    white-space: normal;
+    padding: 30px;
+
+    @include text2;
+    line-height: 1.2;
+    text-align: left;
+    color: $dark;
+
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+    background: $white;
+    border-radius: 20px;
+
+    @include r($breakpoint-2) {
+      padding: 15px;
+      border-radius: $radius;
+    }
+  }
+}
+
+.popup-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  @include r($breakpoint-2) {
+    gap: 20px;
+  }
+
+  & > div {
+    display: block !important;
+  }
+}

@@ -1,0 +1,228 @@
+<section class="section--inner" id="calculator">
+    <div class="container">
+        <form class="calculator">
+
+            <div class="d-flex flex-column align-items-start flex-md-row justify-content-sm-between align-items-md-center gap-15 gap-xs-10 spacing-2">
+                <div class="title-h3 font-bold d-flex align-items-center gap-10">
+                    <svg width="40" height="40" fill="#255DEC">
+                        <use xlink:href="#calculator"></use>
+                    </svg>
+                    <span>Рассчитать стоимость лесов</span>
+                </div>
+
+                <div class="calculator-mode">
+
+                    <input id="mode-1" type="radio" name="mode" checked>
+                    <label for="mode-1" class="calculator-mode__radio">
+                        <span class="calculator-mode__radio-text">Продажа</span>
+                    </label>
+
+                    <input id="mode-2" type="radio" name="mode">
+                    <label for="mode-2" class="calculator-mode__radio">
+                        <span class="calculator-mode__radio-text">Аренда</span>
+                    </label>
+
+                    <span class="calculator-mode__base"></span>
+                </div>
+            </div>
+
+            <div class="title-h5 font-medium spacing-3">Выберите тип лесов</div>
+
+            <div class="row row-gap-20 row-gap-xs-10 spacing-1">
+                <div class="col-md-3 col-6">
+                    <label class="checkbox-html">
+                        <input type="radio" name="type" checked>
+                        <span class="checkbox-html__in d-flex flex-column align-items-center gap-10 gap-xs-5">
+                            <img class="img-responsive framing-type-checkbox__picture circle" src="{{root}}assets/img/framing-types/1.jpg" alt="Рамные леса">
+                            <span class="text">Рамные леса</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="col-md-3 col-6">
+                    <label class="checkbox-html">
+                        <input type="radio" name="type">
+                        <span class="checkbox-html__in d-flex flex-column align-items-center gap-10 gap-xs-5">
+                            <img class="img-responsive framing-type-checkbox__picture circle" src="{{root}}assets/img/framing-types/2.jpg" alt="Хомутовые леса">
+                            <span class="text">Хомутовые леса</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="col-md-3 col-6">
+                    <label class="checkbox-html">
+                        <input type="radio" name="type">
+                        <span class="checkbox-html__in d-flex flex-column align-items-center gap-10 gap-xs-5">
+                            <img class="img-responsive framing-type-checkbox__picture circle" src="{{root}}assets/img/framing-types/3.jpg" alt="Клиновые леса">
+                            <span class="text">Клиновые леса</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="col-md-3 col-6">
+                    <label class="checkbox-html">
+                        <input type="radio" name="type">
+                        <span class="checkbox-html__in d-flex flex-column align-items-center gap-10 gap-xs-5">
+                            <img class="img-responsive framing-type-checkbox__picture circle" src="{{root}}assets/img/framing-types/4.jpg" alt="Штыревые леса">
+                            <span class="text">Штыревые леса</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="title-h5 font-medium spacing-3">Укажите параметры фасадов здания</div>
+
+            <div class="face-list d-flex flex-column gap-10 spacing-5">
+                <div class="face leaf bg-white">
+                    <div class="title-h4 font-medium spacing-4">Фасад №1</div>
+                    <div class="face-grid">
+                        <div class="face-item">
+                            <div class="spacing-5">Высота, м</div>
+                            <div class="form-number">
+                                <button class="form-number__button js-form-number-minus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-number__input" type="number" value="100" min="1" max="150">
+                                <button class="form-number__button js-form-number-plus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="face-item">
+                            <div class="spacing-5">Длина, м</div>
+                            <div class="form-number">
+                                <button class="form-number__button js-form-number-minus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-number__input" type="number" value="10" min="1" max="150">
+                                <button class="form-number__button js-form-number-plus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="face-item">
+                            <div class="spacing-5">Кол-во ярусов</div>
+                            <div class="form-number">
+                                <button class="form-number__button js-form-number-minus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-number__input" type="number" value="10" min="1" max="150">
+                                <button class="form-number__button js-form-number-plus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="face-item">
+                            <div class="spacing-5">Кол-во подъёмов</div>
+                            <div class="form-number">
+                                <button class="form-number__button js-form-number-minus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-number__input" type="number" value="100" min="1" max="150">
+                                <button class="form-number__button js-form-number-plus">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="face-grid__button-wrapper">
+                            <button data-src="#popup-face" data-fancybox class="button button--lg button-secondary button-icon w-xs-100">
+                                <span>Настроить</span>
+                                <svg width="24" height="24">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </button>
+                            <span class="face-grid__button-label">33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button button-icon button-fourthary w-100 spacing-1">
+                <svg width="24" height="24">
+                    <use xlink:href="#plus"></use>
+                </svg>
+                <span class="font-regular">Добавить еще фасад</span>
+            </button>
+
+            <div class="d-flex flex-column flex-lg-row align-items-lg-end gap-20 gap-lg-40 row-gap-xs-10 spacing-2">
+                <div>
+                    <div class="text color-grayText3 spacing-5">Стоимость комплекта</div>
+                    <div class="title-h2 font-bold">6 639 688 р</div>
+                </div>
+
+                <div class="d-flex flex-wrap align-items-start gap-30 row-gap-xs-10 row-gap-20 ml-lg-4">
+                    <div>
+                        <div class="color-grayText3 text3 spacing-5">Количество ячеек</div>
+                        <div class="font-medium">1 650</div>
+                    </div>
+                    <div>
+                        <div class="color-grayText3 text3 spacing-5">Площадь конструкции</div>
+                        <div class="font-medium">9 900 м²</div>
+                    </div>
+                    <div>
+                        <div class="color-grayText3 text3 spacing-5">Вес конструкции</div>
+                        <div class="font-medium">63 228 кг</div>
+                    </div>
+                    <div>
+                        <div class="color-grayText3 text3 spacing-5">Объём</div>
+                        <div class="font-medium">227 м3</div>
+                    </div>
+                    <div>
+                        <div class="color-grayText3 text3 spacing-5">Цена за м²</div>
+                        <div class="font-medium">672 р</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-start flex-wrap gap-40 gap-20 gap-lg-40 row-gap-xs-10 spacing-1">
+                <label class="switcher">
+                    <input type="checkbox" checked>
+                    <span class="switcher__in"></span>
+                    <span class="switcher__text">Нужен монтаж</span>
+                </label>
+                <label class="switcher">
+                    <input type="checkbox" checked>
+                    <span class="switcher__in"></span>
+                    <span class="switcher__text">Нужна доставка</span>
+                </label>
+                <label class="switcher">
+                    <input type="checkbox" checked>
+                    <span class="switcher__in"></span>
+                    <span class="switcher__text">Нужна фасадная сетка</span>
+                </label>
+            </div>
+
+            <div class="d-flex flex-column row-gap-20 align-items-start flex-md-row justify-content-md-between align-items-md-center">
+                <button type="submit" class="button button-green w-xs-100">Оставить заявку</button>
+
+                <div class="d-flex flex-wrap gap-30 row-gap-20 row-gap-xs-10 align-items-start">
+                    <div class="d-flex align-items-center gap-10 gap-xs-5">
+                        <svg width="24" height="24" stroke="#7F8A9B">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                        <span class="color-grayText2">33 432 просмотров</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-10 gap-xs-5">
+                        <svg width="24" height="24" fill="#7F8A9B">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                        <span class="color-grayText2">289 заявок</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

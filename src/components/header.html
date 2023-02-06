@@ -1,0 +1,1236 @@
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__in">
+                <div class="header-geo">
+                    <svg width="20" height="20" fill="#626D7D">
+                        <use xlink:href="#geo"></use>
+                    </svg>
+                    <span class="text3">Подольск, Бронницкая, 5</span>
+                </div>
+
+                <div class="header-top__nav-wrapper d-flex align-items-center gap-30">
+                    <nav class="header-top__nav">
+                        <a class="header-top__nav-link link-grayText3">Доставка</a>
+                        <a class="header-top__nav-link link-grayText3">Оплата</a>
+                        <a class="header-top__nav-link link-grayText3">Статьи</a>
+                        <a class="header-top__nav-link link-grayText3">Новости</a>
+                        <a class="header-top__nav-link link-grayText3">Помощь</a>
+                        <a class="header-top__nav-link link-grayText3">О компании</a>
+                        <a class="header-top__nav-link link-grayText3">Контакты</a>
+                    </nav>
+
+                    <button class="link link-blue link-blue-icon" data-src="#popup-call" data-fancybox>
+                        <svg width="18" height="18">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle">
+        <div class="container">
+            <div class="header-middle__in">
+                <a href="#" class="header-phone-talk">
+                    <svg width="24" height="24" fill="#0061FF">
+                        <use xlink:href="#phone-talk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header-logo">
+                    {{> logo }}
+
+                    <span class="header-logo__title">Строительные леса и&nbsp;оборудование</span>
+                </a>
+
+                <div class="header-contacts">
+                    <a href="tel:8 (800) 775-03-29" class="font-bold">8 (800) 775-03-29</a>
+                    <a href="mailto:info17@ooodirs.ru" class="link-blue text3">info17@ooodirs.ru</a>
+                </div>
+
+                <div class="header-schedule text3">
+                    <div class="header-schedule__row">
+                        <div class="font-medium">Пн - Пт</div>
+                        <div>8:00 - 21:00</div>
+                    </div>
+
+                    <div class="header-schedule__row">
+                        <div class="font-medium">Суббота</div>
+                        <div>9:00 - 16:00</div>
+                    </div>
+                </div>
+
+                <a href="#" class="header-ws ws-button">
+                    <svg width="20" height="20">
+                        <use xlink:href="#phone-circle"></use>
+                    </svg>
+                    <span class="font-medium">Whatsapp</span>
+                </a>
+
+                <div class="header-actions__content">
+                    <div class="header-actions__wrapper">
+                        <a href="#" class="header-actions__item link-hover-blue-svg">
+                            <svg width="24" height="24">
+                                <use xlink:href="#cabinet"></use>
+                            </svg>
+                            <span class="text4">Кабинет</span>
+                        </a>
+                        <a href="#" class="header-actions__item link-hover-blue-svg">
+                            <svg width="24" height="24">
+                                <use xlink:href="#stat"></use>
+                            </svg>
+                            <span class="text4">Сравнение</span>
+                        </a>
+                        <button data-src="#popup-search" data-fancybox class="header-actions__item header-actions__item--search link-hover-blue-svg">
+                            <svg width="22" height="22">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                            <span class="text4">Поиск</span>
+                        </button>
+                        <a href="#" class="header-actions__item link-hover-blue-svg">
+                            <svg width="24" height="24">
+                                <use xlink:href="#heart"></use>
+                            </svg>
+                            <span class="text4">Избранное</span>
+                        </a>
+                        <a href="#" class="header-actions__item link-hover-blue-svg">
+                            <svg width="24" height="24">
+                                <use xlink:href="#cart"></use>
+                            </svg>
+                            <span class="text4">Корзина</span>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="header-burger js-toggle-menu">
+                    <svg width="34" height="34">
+                        <use xlink:href="#burger"></use>
+                    </svg>
+                    <svg width="34" height="34">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <div class="container">
+            <div class="header-nav__in">
+                <div class="header-nav__button-wrapper">
+                    <button class="header-nav__button js-toggle-catalog">
+                        <span class="header-nav__button-icon">
+                            <svg width="24" height="24">
+                                <use xlink:href="#burger"></use>
+                            </svg>
+                            <svg width="24" height="24">
+                                <use xlink:href="#cross"></use>
+                            </svg>
+                        </span>
+                        <span>Каталог</span>
+                    </button>
+                    <!-- catalog -->
+                    <div class="catalog">
+                        <div class="container">
+                            <div class="catalog__grid">
+                                <div class="catalog__column">
+                                    <div class="catalog__column-in">
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/1.jpg" alt="Строительные леса">
+                                                    <span>Строительные леса</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Строительные леса</div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Рамные леса</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Хомутовые леса</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Клиновые леса</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Штыревые леса</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Оцинкованные леса</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Чашечные леса</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/2.jpg" alt="Опалубка перекрытий">
+                                                    <span>Опалубка перекрытий</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Опалубка перекрытий</div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Рамная опалубка</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Чашечная опалубка CUP LOCK</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Клиновая опалубка ДИРС</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Опалубка ХСИ</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Телескопическая опалубка</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Оцинкованная опалубка</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/3.jpg" alt="Вышка тура">
+                                                    <span>Вышка тура</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Вышка тура</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышки тура ВСР</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Оцинкованная вышка ВСР</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышка тура Эконом</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышки тура ВСП</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Алюминиевая вышка тура</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышка клиновая ВТК</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышки тура ВСП</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Алюминиевая вышка тура</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышка клиновая ВТК</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышки тура ВСП</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Алюминиевая вышка тура</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Вышка клиновая ВТК</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/4.jpg" alt="Помосты и подмости">
+                                                    <span>Помосты и подмости</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Помосты и подмости</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Помосты стальные</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Помосты алюминиевые</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Монтажные подставки</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Рабочие платформы</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/5.jpg" alt="Лестницы">
+                                                    <span>Лестницы</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Лестницы</div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Односекционные</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Двухсекционные</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Трехсекционные</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Трансформер</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">С канатной тягой</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Диэлектрические лестницы</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/6.jpg" alt="Стремянки">
+                                                    <span>Стремянки</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Стремянки</div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Односторонние</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Двусторонние</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">С широкими ступенями</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Передвижные</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Стремянка-помост</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Диэлектрические</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Фибергласовые</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/7.jpg" alt="Водосточная система кровли">
+                                                    <span>Водосточная система кровли</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Водосточная система кровли</div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Желоб водосточный</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Воронка желоба</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Угол желоба</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Кронштейн желоба</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Канадка водосточная</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Труба водосточная</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/8.jpg" alt="Алюминиевые конструкции">
+                                                    <span>Алюминиевые конструкции</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Алюминиевые конструкции</div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Все конструкции</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/9.jpg" alt="Снегозадержатели">
+                                                    <span>Снегозадержатели</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Снегозадержатели</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На металлочерепицу</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На профнастил</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На сэндвич-панель</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На фальцевую кровлю (с вертикальным пазом)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На композитную кровлю</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/10.jpg" alt="Кровельное ограждение">
+                                                    <span>Кровельное ограждение</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Кровельное ограждение</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На металлочерепицу</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На мягкую кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На сэндвич-панель</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На профнастил</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На фальцевую кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На парапет</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/11.jpg" alt="Кровельные мостики">
+                                                    <span>Кровельные мостики</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Кровельные мостики</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На металлочерепицу</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На натуральную черепицу</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На фальцевую кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На композитную черепицу</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На мягкую кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Перила на кровельные мостики</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/12.jpg" alt="Кровельные лестницы">
+                                                    <span>Кровельные лестницы</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Кровельные лестницы</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На металлочерепицу</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На фальцевую кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На мягкую кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На профнастил</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На композитную кровлю</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">На натуральную кровлю</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/13.jpg" alt="Пожарные и стеновые лестницы">
+                                                    <span>Пожарные и стеновые лестницы</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Пожарные и стеновые лестницы</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Стеновые лестницы</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Пожарные лестницы</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/14.jpg" alt="Строительная сетка">
+                                                    <span>Строительная сетка</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Строительная сетка</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Сетка фасадная</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Защитно-улавливающие сети (ЗУС)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Сетка малярная</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Сетка штукатурная</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Агротекстиль</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/15.jpg" alt="Аварийное и переносное ограждение">
+                                                    <span>Аварийное и переносное ограждение</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Аварийное и переносное ограждение</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Переносное ограждение (СПО)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Пластиковые вехи</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Аварийное ограждение (90г/м2)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Аварийное ограждение (110г/м2)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Аварийное ограждение (140г/м2)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Аварийное ограждение (150г/м2)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/16.jpg" alt="Брезенты">
+                                                    <span>Брезенты</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Брезенты</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Огнеупорный</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Водостойкий</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/17.jpg" alt="Тенты">
+                                                    <span>Тенты</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Тенты</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Тарпаулин</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">ПВХ</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовый/м2)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/18.jpg" alt="Армированная пленка">
+                                                    <span>Армированная пленка</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Армированная пленка</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 80 гр/м2</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 100 гр/м2</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 120 гр/м2</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 120 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 140 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 180 гр/м2</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Армированная пленка 200 мкм</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/19.jpg" alt="Полиэтиленовая пленка">
+                                                    <span>Полиэтиленовая пленка</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Полиэтиленовая пленка</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовая пленка 40 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовая пленка 60 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовая пленка 80 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовая пленка 100 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовая пленка 120 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Полиэтиленовая пленка 150 мкм</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/20.jpg" alt="Техническая пленка">
+                                                    <span>Техническая пленка</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Техническая пленка</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Техническая пленка 80 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Техническая пленка 100 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Техническая пленка 120 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Техническая пленка 150 мкм</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Техническая пленка 200 мкм</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/21.jpg" alt="Сетка баннерная с принтом">
+                                                    <span>Сетка баннерная с принтом</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Сетка баннерная с принтом</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Сетка баннерная "Штакетник"</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Фальшфасад (сетка с рисунком)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Баннерная сетка</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/22.jpg" alt="Строительные хомуты для лесов">
+                                                    <span>Строительные хомуты для лесов</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Строительные хомуты для лесов</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Хомут неповоротный (глухой)</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Хомут поворотный</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Хомут стыковочный</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Специальные хомуты</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/23.jpg" alt="Настилы для лесов">
+                                                    <span>Настилы для лесов</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Настилы для лесов</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Деревянные настилы</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Металлические настилы</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Комбинированные настилы</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/24.jpg" alt="Комплектующие для вышек тура">
+                                                    <span>Комплектующие для вышек тура</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Комплектующие для вышек тура</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для стальных вышек тура</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для алюминиевых вышек тура</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/25.jpg" alt="Комплектующие для лесов">
+                                                    <span>Комплектующие для лесов</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Комплектующие для лесов</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для рамных лесов</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для чашечных лесов</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Готовые комлекты</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для рамных лесов Professional</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для хомутовых лесов</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для клиновых лесов</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/26.jpg" alt="Комплектующие для опалубки">
+                                                    <span>Комплектующие для опалубки</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Комплектующие для опалубки</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Телескопические стойки</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Рамная опалубка</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Для чашечных лесов</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Доборные элементы</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-link__wrapper">
+                                            <a href="#" class="catalog-link js-catalog-link">
+                                                <span class="d-flex align-items-center gap-10 gap-xs-5">
+                                                    <img src="{{root}}assets/img/catalog/27.jpg" alt="Благоустройство">
+                                                    <span>Благоустройство</span>
+                                                </span>
+                                                <svg width="24" height="24">
+                                                    <use xlink:href="#chevron-right"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="catalog-dropdown">
+                                                <div class="catalog-dropdown__in">
+                                                    <div class="catalog-dropdown__title font-bold">Благоустройство</div>
+
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Газонное ограждение</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">Мангалы</a>
+                                                    </div>
+                                                    <div class="catalog-dropdown__link-wrapper">
+                                                        <a href="#" class="catalog-dropdown__link">СИЗ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__column"></div>
+                                <div class="catalog__grid-base"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav__link-wrapper">
+                    <a href="#" class="header-nav__link d-flex align-items-center gap-10 gap-xs-5">
+                        <span>Аренда</span>
+                        <svg width="24" height="24">
+                            <use xlink:href="#chevron-bottom"></use>
+                        </svg>
+                    </a>
+                    <div class="header-nav__dropdown">
+                        <div class="header-nav__dropdown-in">
+                            <div class="header-nav__dropdown-link-wrapper">
+                                <a href="#" class="header-nav__dropdown-link d-flex justify-content-between align-items-center gap-10 gap-xs-5">
+                                    <span>Категория</span>
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#chevron-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="header-nav__subdropdown">
+                                    <div class="header-nav__subdropdown-in">
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-nav__dropdown-link-wrapper">
+                                <a href="#" class="header-nav__dropdown-link">
+                                    Категория
+                                </a>
+                            </div>
+                            <div class="header-nav__dropdown-link-wrapper">
+                                <a href="#" class="header-nav__dropdown-link d-flex justify-content-between align-items-center gap-10 gap-xs-5">
+                                    <span>Категория</span>
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#chevron-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="header-nav__subdropdown">
+                                    <div class="header-nav__subdropdown-in">
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav__link-wrapper">
+                    <a href="#" class="header-nav__link d-flex align-items-center gap-10 gap-xs-5">
+                        <span>Монтаж</span>
+                        <svg width="24" height="24">
+                            <use xlink:href="#chevron-bottom"></use>
+                        </svg>
+                    </a>
+                    <div class="header-nav__dropdown">
+                        <div class="header-nav__dropdown-in">
+                            <div class="header-nav__dropdown-link-wrapper">
+                                <a href="#" class="header-nav__dropdown-link d-flex justify-content-between align-items-center gap-10 gap-xs-5">
+                                    <span>Категория</span>
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#chevron-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="header-nav__subdropdown">
+                                    <div class="header-nav__subdropdown-in">
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-nav__dropdown-link-wrapper">
+                                <a href="#" class="header-nav__dropdown-link">
+                                    Категория
+                                </a>
+                            </div>
+                            <div class="header-nav__dropdown-link-wrapper">
+                                <a href="#" class="header-nav__dropdown-link d-flex justify-content-between align-items-center gap-10 gap-xs-5">
+                                    <span>Категория</span>
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#chevron-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="header-nav__subdropdown">
+                                    <div class="header-nav__subdropdown-in">
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                        <div class="header-nav__subdropdown-link-wrapper">
+                                            <a href="#" class="header-nav__subdropdown-link">Подкатегория</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav__link-wrapper">
+                    <a href="#" class="header-nav__link">Разработка ППР</a>
+                </div>
+                <div class="header-nav__link-wrapper">
+                    <a href="#" class="header-nav__link">Акции</a>
+                </div>
+
+                {{> search-base }}
+
+            </div>
+        </div>
+
+        {{> search-dropdown }}
+
+    </div>
+
+    <div id="menu" class="header-menu">
+        <div class="container">
+            <div class="header-menu__in"></div>
+        </div>
+    </div>
+</header>
+
+<div class="tapbar">
+    <div class="container">
+        <div class="tapbar__in"></div>
+    </div>
+</div>
