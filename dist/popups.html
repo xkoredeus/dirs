@@ -1380,150 +1380,380 @@
         </div>
         <main role="main" class="layout__in">
 
-            <div class="container">
-                <ul class="crumbs">
-                    <li>
-                        <a href="#">Главная</a>
-                        <svg width="20" height="20">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <a href="#">Второй уровень</a>
-                        <svg width="20" height="20">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <a href="#">Третий уровень</a>
-                        <svg width="20" height="20">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <span>Название страницы</span>
-                    </li>
-                </ul>
-            </div>
             <section class="section--inner">
                 <div class="container">
-                    <div class="title-h1 font-bold spacing-2">Личный кабинет</div>
+                    <div class="title-h2 font-bold spacing-3">
+                        <div>Модальные окна</div>
+                    </div>
+                    <div class="color-grayText3 text2 spacing-4">(кнопка закрытия - крестик инициализируется в модальном окне fancybox)</div>
             
-                    <div class="manager spacing-2">
-                        <div class="d-flex gap-15 align-items-center">
-                            <img src="assets/img/team/1.jpg" alt="">
-                            <div class="d-flex flex-column align-items-start">
-                                <div class="color-grayText3 spacing-5">Ваш персональный менеджер</div>
-                                <div class="font-bold text">Калинина Ольга</div>
+                    <div class="popup-list">
+            
+                        <div id="popup-call" class="popup__wrapper" style="display: none">
+                            <div class="popup__in">
+                                <div class="popup-title__wrapper">
+                                    <div class="title-h4 font-bold spacing-3">Обратный звонок</div>
+                                </div>
+                        
+                                <div class="title-h6 lh14 spacing-2">Оставьте заявку мы рассчитаем стоимость установки и договоримся о выезде мастера</div>
+                        
+                                <form class="d-flex flex-column w-100 gap-15 gap-xs-10">
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Ваш телефон</span>
+                                        <input type="tel" class="form-field__input js-tel" placeholder="+7 963 458-78-21">
+                                    </label>
+                                    <label class="form-field form-field--bg">
+                                        <span class="form-field__label">Электронная почта</span>
+                                        <input type="email" class="form-field__input" placeholder="email@example.com">
+                                    </label>
+                        
+                                    <div class="d-flex align-items-sm-center flex-column flex-sm-row gap-20">
+                                        <button class="button button-secondary" type="submit">Оставить заявку</button>
+                                        <span class="color-gray2 text3">Заполняя форму вы соглашаетесь <br class="d-none d-sm-inline"> на <a href="#" class="link-gray2 und">обработку персональных данных</a></span>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                    
-                        <div class="manager-info d-flex flex-column align-items-start gap-5">
-                            <a href="tel:8 (495) 189-71-28" class="font-bold text">8 (495) 189-71-28</a>
-                            <div class="color-grayText2">Звоните с 09:00 до 18:00</div>
-                        </div>
-                    
-                        <div class="manager-info d-flex flex-column align-items-start gap-5">
-                            <a href="mailto:office@ooodirs.ru" class="font-medium text">office@ooodirs.ru</a>
-                            <button class="link-blue justify-content-start tal">Отправить письмо</button>
-                        </div>
-                    
-                    
-                        <a href="#" class="ws-button">
-                            <svg width="20" height="20">
-                                <use xlink:href="#phone-circle"></use>
-                            </svg>
-                            <span class="font-medium">Написать в Whatsapp</span>
-                        </a>
-                    
-                    </div>
-                    <div class="row row-gap-20">
-                        <div class="col-md-2">
-                            <nav class="d-flex flex-column align-items-start gap-25 row-gap-xs-10 text">
-                                <a href="#">Мои данные</a>
-                                <a href="#">Мои заказы</a>
-                                <a href="#">Обратная связь</a>
-                                <a href="#" class="link-blue">Выйти</a>
-                            </nav>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="title-h3 font-bold spacing-3">Обратная связь</div>
-            
-                            <div class="row">
-                                <div class="col-lg-7 col-md-8">
-                                    <div class="spacing-3 color-grayText3 lh13">Наш менеджер сделает расчёт стоимости и комплектности лесов конкретно под ваши задачи и ответит на любые вопросы</div>
-            
-                                    <form class="order-form row row-gap-10 spacing-3">
-                                        <div class="col-12">
-                                            <label class="form-field form-field--bg form-field--select">
-                                                <span class="form-field__label">Тема обращения</span>
-                                                <select class="js-select">
-                                                    <option>Тема обращения</option>
-                                                    <option>Тема обращения</option>
-                                                    <option>Тема обращения</option>
-                                                </select>
+                        
+                        <div id="popup-face" class="popup__wrapper popup__wrapper--xl" style="display: none">
+                            <div class="popup__in">
+                                <div class="popup-title__wrapper">
+                                    <div class="title-h4 font-bold spacing-2">Фасад №1</div>
+                                </div>
+                                <form class="w-100">
+                                    <div class="font-medium spacing-4">Выберите тип лесов</div>
+                                    <div class="row row-gap-20 row-gap-xs-10 spacing-3">
+                                        <div class="col-md-4 col-6">
+                                            <label class="checkbox-html">
+                                                <input type="radio" name="flooring" checked>
+                                                <span class="checkbox-html__in d-flex flex-column flex-md-row align-items-center gap-10 gap-xs-5">
+                                                    <img class="img-responsive framing-type-checkbox__picture" src="assets/img/flooring-1.jpg" alt="Деревянный">
+                        
+                                                    <span class="d-flex flex-column gap-5">
+                                                        <span>Деревянный</span>
+                                                        <span class="text-4 color-grayText2">1,23 х 0,45 (25 мм)</span>
+                                                    </span>
+                                                </span>
                                             </label>
                                         </div>
-                                        <div class="col-12">
-                                            <label class="form-field form-field--bg form-field-textarea flex-grow-1">
-                                                <span class="form-field__label">Комментарий к заказу</span>
-                                                <textarea rows="4" placeholder="Текст комментария"></textarea>
+                                        <div class="col-md-4 col-6">
+                                            <label class="checkbox-html">
+                                                <input type="radio" name="flooring">
+                                                <span class="checkbox-html__in d-flex flex-column flex-md-row align-items-center gap-10 gap-xs-5">
+                                                    <img class="img-responsive framing-type-checkbox__picture" src="assets/img/flooring-2.jpg" alt="Металлический">
+                        
+                                                    <span class="d-flex flex-column gap-5">
+                                                        <span>Металлический</span>
+                                                        <span class="text-4 color-grayText2">1,23 х 0,45 (25 мм)</span>
+                                                    </span>
+                                                </span>
                                             </label>
                                         </div>
+                                    </div>
+                        
+                                    <div class="d-flex flex-wrap row-gap-20 gap-20 gap-lg-40 row-gap-xs-10 spacing-3">
+                                        <div class="calc-number-item">
+                                            <div class="spacing-5 font-medium">Ярусов ограждений</div>
+                                            <div class="form-number">
+                                                <button class="form-number__button js-form-number-minus">
+                                                    <svg width="24" height="24">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </button>
+                                                <input class="form-number__input" type="number" value="10" min="1" max="150">
+                                                <button class="form-number__button js-form-number-plus">
+                                                    <svg width="24" height="24">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="calc-number-item">
+                                            <div class="spacing-5 font-medium">Отбортовочный элемент</div>
+                                            <div class="form-number">
+                                                <button class="form-number__button js-form-number-minus">
+                                                    <svg width="24" height="24">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </button>
+                                                <input class="form-number__input" type="number" value="10" min="1" max="150">
+                                                <button class="form-number__button js-form-number-plus">
+                                                    <svg width="24" height="24">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="calc-number-item">
+                                            <div class="spacing-5 font-medium">Консоли</div>
+                                            <div class="form-number">
+                                                <button class="form-number__button js-form-number-minus">
+                                                    <svg width="24" height="24">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </button>
+                                                <input class="form-number__input" type="number" value="10" min="1" max="150">
+                                                <button class="form-number__button js-form-number-plus">
+                                                    <svg width="24" height="24">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="row row-gap-20 spacing-2">
                                         <div class="col-sm-6">
-                                            <div class="d-flex flex-column gap-15 h-100">
-                                                <label class="form-field form-field--bg">
-                                                    <span class="form-field__label">Ваше имя</span>
-                                                    <input class="form-field__input" type="text" placeholder="Семён">
+                                            <div class="font-medium spacing-4">Длина ячейки</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="cell-length" checked>
+                                                    <span class="calc-form-group__item-text">1 м</span>
                                                 </label>
-                                                <label class="form-field form-field--bg">
-                                                    <span class="form-field__label">Телефон</span>
-                                                    <input class="form-field__input js-tel" type="tel" placeholder="+7 911 785-52-13">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="cell-length">
+                                                    <span class="calc-form-group__item-text">2 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="cell-length">
+                                                    <span class="calc-form-group__item-text">3 м</span>
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <label class="form-field form-field--bg spacing-2">
-                                                <span class="form-field__label">Email</span>
-                                                <input class="form-field__input" type="email" placeholder="Email@example.com">
-                                            </label>
-            
-                                            <label class="link-blue link-blue-icon link-icon ease d-flex align-items-center gap-10 curp">
-                                                <input class="file-input js-file-input js-file-input-order" type="file">
-                                                <span class="file-list">Прикрепить файл</span>
-                                                <svg width="20" height="20">
-                                                    <use xlink:href="#pin"></use>
-                                                </svg>
-                                            </label>
+                                            <div class="font-medium spacing-4">Длина стойки</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="length" checked>
+                                                    <span class="calc-form-group__item-text">3 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="length">
+                                                    <span class="calc-form-group__item-text">4 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="length">
+                                                    <span class="calc-form-group__item-text">5 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="length">
+                                                    <span class="calc-form-group__item-text">6 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="length">
+                                                    <span class="calc-form-group__item-text">7 м</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </form>
-            
-                                    <div class="row row-gap-10 align-items-sm-center">
-                                        <div class="col-sm-5">
-                                            <button type="submit" class="button w-100 button-primary">Опубликовать</button>
+                        
+                                        <div class="col-sm-6">
+                                            <div class="font-medium spacing-4">Домкрат/подпятник</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="axle" checked>
+                                                    <span class="calc-form-group__item-text">Домкрат</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="axle">
+                                                    <span class="calc-form-group__item-text">Подпятник</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-7">
-                                            <div class="color-grayText3 text4">Заполняя форму вы соглашаетесь <br class="d-none d-sm-inline"> на <a href="#" class="link-grayText3 und">обработку персональных данных</a></div>
+                                        <div class="col-sm-6">
+                                            <div class="font-medium spacing-4">Кронштейн / стеновая опора</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="carrier" checked>
+                                                    <span class="calc-form-group__item-text">Кронштейн</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="carrier">
+                                                    <span class="calc-form-group__item-text">Стеновая опора</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="col-sm-6">
+                                            <div class="font-medium spacing-4">Планка под кронштейн</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="ledge-axle" checked>
+                                                    <span class="calc-form-group__item-text">Нет</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="ledge-axle">
+                                                    <span class="calc-form-group__item-text">1 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="ledge-axle">
+                                                    <span class="calc-form-group__item-text">2 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="ledge-axle">
+                                                    <span class="calc-form-group__item-text">3 м</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="font-medium spacing-4">Стабилизационная опора</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="bent" checked>
+                                                    <span class="calc-form-group__item-text">Нет</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="bent">
+                                                    <span class="calc-form-group__item-text">1 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="bent">
+                                                    <span class="calc-form-group__item-text">2 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="bent">
+                                                    <span class="calc-form-group__item-text">3 м</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="col-sm-6">
+                                            <div class="font-medium spacing-4">Шаг фланца</div>
+                                            <div class="calc-form-group">
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="step" checked>
+                                                    <span class="calc-form-group__item-text">3 м</span>
+                                                </label>
+                                                <label class="calc-form-group__item">
+                                                    <input type="radio" name="step">
+                                                    <span class="calc-form-group__item-text">4 м</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 align-self-sm-end">
+                                            <label class="switcher mb-sm-3">
+                                                <input type="checkbox">
+                                                <span class="switcher__in"></span>
+                                                <span class="switcher__text">Стартовый элемент</span>
+                                            </label>
                                         </div>
                                     </div>
-                                </div>
+                        
+                                    <div class="d-flex flex-column flex-sm-row gap-30 row-gap-10">
+                                        <button type="submit" class="w-xs-100 button button-primary">Сохранить</button>
+                        
+                                        <button class="w-xs-100 link-grayText1 font-medium">Удалить фасад</button>
+                                    </div>
+                        
+                        
+                                </form>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="section--inner">
-                <div class="container">
-                    <div class="banner leaf">
-                        <div class="banner__in">
-                            <div class="title-h4 font-bold spacing-4">Ежегодный фестиваль мёда</div>
-                            <div class="text spacing-3">Мы приглашаем каждого желающего на нашу пасеку и медовый фестиваль</div>
-            
-                            <button class="button button-mead">Стать участником</button>
-                        </div>
-                        <img class="banner-picture" src="assets/img/banner-bg.jpg" alt="Ежегодный фестиваль мёда">
-                    </div>
+                        
+                        
+                        <div id="popup-search" class="popup__wrapper popup__wrapper--search" style="display: none">
+                            <div class="popup__in">
+                                <div class="popup-title__wrapper">
+                                    <div class="title-h4 font-bold spacing-3">Введите поисковой запрос</div>
+                        
+                                    <form class="popup-search-form">
+                                        <label class="form-field form-field--bg form-field--search">
+                                            <svg class="form-field--search__icon" width="20" height="20">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                            <input class="form-field--search__input" type="text" placeholder="Поиск по сайту">
+                                        </label>
+                        
+                                        <div class="search-dropdown">
+                                            <div class="container">
+                                                <div class="search-dropdown__in">
+                                                    <div class="row spacing-3">
+                                                        <div class="col-lg-6 mb-3 mb-lg-0">
+                                                            <div class="search-dropdown__list">
+                                                                <a href="#">Желоб <strong>водосточный</strong></a>
+                                                                <a href="#">Воронка желоба</a>
+                                                                <a href="#">Угол желоба</a>
+                                                                <a href="#">Канадка <strong>водосточная</strong></a>
+                                                                <a href="#"><strong>Водосточная</strong> система кровли</a>
+                                                                <a href="#"><strong>Водосточная</strong> система кровли из оцинкованной стали</a>
+                                                                <a href="#">Колено трубы</a>
+                                                                <a href="#">Труба <strong>водосточная</strong></a>
+                                                                <a href="#">Крепление трубы</a>
+                                                                <a href="#">Заглушка желоба</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="search-dropdown__list">
+                                                                <div class="search-dropdown__item">
+                                                                    <img src="assets/img/search-dropdown-item-1.jpg" alt="Желоб водосточный (2000мм) D-100 (Zn)">
+                                                                    <div class="search-dropdown__item-info d-flex flex-column align-items-start gap-15 gap-xs-10">
+                                                                        <div class="d-flex align-items-center gap-15 gap-xs-5">
+                                                                            <div class="font-bold title-h4">637 р</div>
+                                                                            <div class="color-orange text">-12%</div>
+                                                                            <div class="color-grayText1 tdlt text">3 430 р</div>
+                                                                        </div>
+                                                                        <a href="#">Желоб водосточный (2000мм) D-100 (Zn)</a>
+                                                                    </div>
+                                                                    <div class="search-dropdown__item-actions d-flex flex-column align-items-start gap-20 gap-xs-10">
+                                                                        <button class="button button-secondary button--sm button-icon">
+                                                                            <svg width="24" height="24">
+                                                                                <use xlink:href="#cart"></use>
+                                                                            </svg>
+                                                                            <span>В корзину</span>
+                                                                        </button>
+                                                                        <a href="#" class="link-blue">Подробнее</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="search-dropdown__item">
+                                                                    <img src="assets/img/search-dropdown-item-2.jpg" alt="Желоб водосточный (2000мм) D-100 (Zn)">
+                                                                    <div class="search-dropdown__item-info d-flex flex-column align-items-start gap-15 gap-xs-10">
+                                                                        <div class="d-flex align-items-center gap-15 gap-xs-5">
+                                                                            <div class="font-bold title-h4">1 004 р</div>
+                                                                            <div class="color-orange text">-12%</div>
+                                                                            <div class="color-grayText1 tdlt text">3 430 р</div>
+                                                                        </div>
+                                                                        <a href="#">Желоб водосточный (2000мм) D-100 (Zn)</a>
+                                                                    </div>
+                                                                    <div class="search-dropdown__item-actions d-flex flex-column align-items-start gap-20 gap-xs-10">
+                                                                        <button class="button button-secondary button--sm button-icon">
+                                                                            <svg width="24" height="24">
+                                                                                <use xlink:href="#cart"></use>
+                                                                            </svg>
+                                                                            <span>В корзину</span>
+                                                                        </button>
+                                                                        <a href="#" class="link-blue">Подробнее</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="search-dropdown__item">
+                                                                    <img src="assets/img/search-dropdown-item-3.jpg" alt="Водосборная воронка D-220 (Zn)">
+                                                                    <div class="search-dropdown__item-info d-flex flex-column align-items-start gap-15 gap-xs-10">
+                                                                        <div class="d-flex align-items-center gap-15 gap-xs-5">
+                                                                            <div class="font-bold title-h4">1 637 р</div>
+                                                                            <div class="color-orange text">-12%</div>
+                                                                            <div class="color-grayText1 tdlt text">3 430 р</div>
+                                                                        </div>
+                                                                        <a href="#">Водосборная воронка D-220 (Zn)</a>
+                                                                    </div>
+                                                                    <div class="search-dropdown__item-actions d-flex flex-column align-items-start gap-20 gap-xs-10">
+                                                                        <button class="button button-secondary button--sm button-icon">
+                                                                            <svg width="24" height="24">
+                                                                                <use xlink:href="#cart"></use>
+                                                                            </svg>
+                                                                            <span>В корзину</span>
+                                                                        </button>
+                                                                        <a href="#" class="link-blue">Подробнее</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="w-100 button button-outlined">Посмотреть все результаты</a>
+                                                </div>
+                                            </div>
+                                        </div>            </form>
+                        
+                                </div>
+                            </div>
+                        </div>        </div>
                 </div>
             </section>
 

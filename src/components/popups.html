@@ -24,27 +24,6 @@
     </div>
 </div>
 
-
-<div id="popup-search" class="popup__wrapper popup__wrapper--search" style="display: none">
-    <div class="popup__in">
-        <div class="popup-title__wrapper">
-            <div class="title-h4 font-bold spacing-3">Введите поисковой запрос</div>
-
-            <form class="popup-search-form">
-                <label class="form-field form-field--bg form-field--search">
-                    <svg class="form-field--search__icon" width="20" height="20">
-                        <use xlink:href="#search"></use>
-                    </svg>
-                    <input class="form-field--search__input" type="text" placeholder="Поиск по сайту">
-                </label>
-
-                {{> search-dropdown }}
-            </form>
-
-        </div>
-    </div>
-</div>
-
 <div id="popup-face" class="popup__wrapper popup__wrapper--xl" style="display: none">
     <div class="popup__in">
         <div class="popup-title__wrapper">
@@ -276,5 +255,26 @@
 
 
         </form>
+    </div>
+</div>
+
+
+<div id="popup-search" class="popup__wrapper popup__wrapper--search" style="display: none">
+    <div class="popup__in">
+        <div class="popup-title__wrapper">
+            <div class="title-h4 font-bold spacing-3">Введите поисковой запрос</div>
+
+            <form class="popup-search-form">
+                <label class="form-field form-field--bg form-field--search">
+                    <svg class="form-field--search__icon" width="20" height="20">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                    <input class="form-field--search__input" type="text" placeholder="Поиск по сайту">
+                </label>
+
+                {{> search-dropdown }}
+            </form>
+
+        </div>
     </div>
 </div>
