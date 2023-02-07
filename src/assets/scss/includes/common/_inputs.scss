@@ -31,7 +31,8 @@ label {
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="tel"]::placeholder {
+input[type="tel"]::placeholder,
+input[type="password"]::placeholder{
   color: $dark;
 }
 input:focus,
@@ -141,6 +142,9 @@ input[type="number"] {
 
       &:hover,
       &:focus {
+        svg {
+          fill: #F5CB5E;
+        }
         ~ label svg {
           fill: #F5CB5E;
         }

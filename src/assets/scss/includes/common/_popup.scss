@@ -16,11 +16,11 @@
   }
 
   &--xl {
-    max-width: 863px;
+    max-width: 864px;
   }
 
   &--lg {
-    max-width: 570px;
+    max-width: 640px;
   }
 
   &--sm {
@@ -28,7 +28,7 @@
   }
 
   &--xs {
-    max-width: 423px;
+    max-width: 450px;
   }
 
   .fancybox-close-small {
@@ -133,5 +133,35 @@
   .search-dropdown {
     opacity: 1;
     visibility: visible;
+  }
+}
+.change-password-success__icon {
+  width: 70px;
+  height: 70px;
+  @include flex-center;
+  background-color: $blue;
+  border-radius: 50%;
+  fill: $white;
+}
+
+.click-popup-item {
+  display: grid;
+  grid-template-columns: 1fr 136px 80px;
+  column-gap: 25px;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $grayBorder1;
+
+  @include r($breakpoint-2) {
+    column-gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  @include r($breakpoint-4) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 }

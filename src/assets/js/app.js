@@ -791,6 +791,50 @@ $(() => {
     }
 
     // event handlers
+    $('.popup-review-form .js-file-review-popup').change(function(e) {
+        let files = $('.popup-review-form .js-file-review-popup')[0].files;
+        if (files.length === 0) {
+            $('.popup-review-form .file-list').html('Прикрепить фото');
+        } else {
+            let filesArr = Array.from(files);
+            updateState({ files: files, filesArr: filesArr });
+
+            renderFileList();
+        }
+    });
+
+    // render functions
+    function renderFileList() {
+        let fileMap = state.filesArr.map((file, index) => {
+            let suffix = 'bt';
+            let size = file.size;
+            if (size >= 1024 && size < 1024000) {
+                suffix = 'kb';
+                size = Math.round(size / 1024 * 100) / 100;
+            } else if (size >= 1024000) {
+                suffix = 'mb';
+                size = Math.round(size / 1024000 * 100) / 100;
+            }
+
+            return (`<div class="file" key="${index}">
+                        <div class="file__name">${file.name}</div>
+                        <div class="file__size">${size} ${suffix}</div>
+                    </div>`);
+        });
+
+        $('.popup-review-form .file-list').html(fileMap);
+    };
+})
+
+
+$(() => {
+    let state = {};
+    // state management
+    function updateState(newState) {
+        state = { ...state, ...newState };
+    }
+
+    // event handlers
     $('.order-form .js-file-input-order').change(function(e) {
         let files = $('.order-form .js-file-input-order')[0].files;
         if (files.length === 0) {
