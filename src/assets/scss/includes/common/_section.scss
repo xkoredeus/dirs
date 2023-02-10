@@ -33,6 +33,18 @@
   }
 }
 
+.spacing-0 {
+  margin-bottom: 60px;
+
+  @include r($breakpoint-2) {
+    margin-bottom: 30px;
+  }
+
+  @include r($breakpoint-2) {
+    margin-bottom: 20px;
+  }
+}
+
 .spacing-1 {
   margin-bottom: 40px;
 

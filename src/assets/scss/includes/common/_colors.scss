@@ -17,7 +17,7 @@ $grayText1: #ADB3BE;
 $grayText2: #7F8A9B;
 $grayText3: #626D7D;
 
-$grayBg: #F9F9FA;
+$grayBg: #F7F7F9;
 $grayBg2: #F7F7F9;
 
 .color-white { color: $white; }
@@ -27,7 +27,7 @@ $grayBg2: #F7F7F9;
 .color-darkPrimary { color: $darkPrimary; }
 .color-lightPrimary { color: $lightPrimary; }
 
-.color-orange { color: $orange; }
+.color-orange { color: $orange !important; }
 .color-green { color: $green; }
 .color-red { color: $red; }
 

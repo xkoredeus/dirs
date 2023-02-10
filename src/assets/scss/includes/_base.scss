@@ -18,7 +18,7 @@ html, body {
   position: relative;
   font-family: $font-regular, Roboto, sans-serif;
   @include text2;
-  line-height: 1.2;
+  line-height: 1.4;
   color: $dark;
   background-color: $white;
   padding: 0;
@@ -71,15 +71,12 @@ sup {
       position: absolute;
       content: "";
       background-color: $primary;
-      top: 8px;
       left: -22px;
       width: 8px;
       height: 8px;
       border-radius: 50%;
-
-      @include r($breakpoint-2) {
-        top: 4px;
-      }
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -92,7 +89,7 @@ sup {
     position: relative;
     margin-bottom: 20px;
     list-style-type: none;
-    padding-left: 32px;
+    padding-left: 39px;
 
     @include r($breakpoint-35) {
       padding-left: 25px;
@@ -105,7 +102,7 @@ sup {
       width: 24px;
       height: 24px;
       @include ct;
-      left: 0;
+      left: -2px;
       top: -3px;
       background-image: url('../img/cross.svg');
 
@@ -142,6 +139,7 @@ sup {
 
       @include r($breakpoint-35) {
         top: -1px;
+        left: 0;
       }
     }
   }
@@ -168,7 +166,7 @@ sup {
       font-size: 16px;
       position: absolute;
       left: -23px;
-      top: 0;
+      top: 1px;
     }
   }
 }

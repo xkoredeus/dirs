@@ -95,3 +95,9 @@ $text5: 12px;
 .text3 { @include text3 }
 .text4 { @include text4 }
 .text5 { @include text5 }
+
+.font-xs-16 {
+  @include r($breakpoint-3) {
+    font-size: 16px !important;
+  }
+}

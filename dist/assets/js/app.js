@@ -27568,17 +27568,19 @@ $(() => {
 
     const reviewsSlider = new Swiper(".js-reviews-slider", {
         speed: 700,
-        spaceBetween: 20,
         breakpoints: {
             0: {
                 slidesPerView: 1,
+                spaceBetween: 10,
             },
             576: {
                 slidesPerView: 2,
+                spaceBetween: 10,
 
             },
             1260: {
                 slidesPerView: 2,
+                spaceBetween: 20,
                 navigation: {
                     nextEl: ".js-reviews-slider-next",
                     prevEl: ".js-reviews-slider-prev",
@@ -27586,6 +27588,7 @@ $(() => {
             },
             1560: {
                 slidesPerView: 2,
+                spaceBetween: 20,
                 navigation: {
                     nextEl: ".js-reviews-slider-next",
                     prevEl: ".js-reviews-slider-prev",
@@ -27776,15 +27779,15 @@ $(() => {
                 slidesPerView: 5,
             },
             976: {
-                spaceBetween: 15,
+                spaceBetween: 14.7,
                 slidesPerView: 6,
             },
             1260: {
-                spaceBetween: 15,
+                spaceBetween: 14.7,
                 slidesPerView: 7,
             },
             1560: {
-                slidesPerView: 6,
+                slidesPerView: 14.7,
                 spaceBetween: 7,
             },
         },
@@ -27792,13 +27795,32 @@ $(() => {
     const selectionsSlider = new Swiper(".js-selections-slider", {
         speed: 700,
         slidesPerView: "auto",
-        spaceBetween: 5,
         navigation: {
             nextEl: ".js-selections-slider-next",
             prevEl: ".js-selections-slider-prev",
         },
-        1260: {
-            spaceBetween: 15,
+        breakpoints: {
+            0: {
+                spaceBetween: 5,
+            },
+            376: {
+                spaceBetween: 5,
+            },
+            576: {
+                spaceBetween: 5,
+            },
+            768: {
+                spaceBetween: 5,
+            },
+            976: {
+                spaceBetween: 15,
+            },
+            1260: {
+                spaceBetween: 15,
+            },
+            1560: {
+                spaceBetween: 15,
+            },
         },
     });
 
@@ -28969,3 +28991,4 @@ $(() => {
         $('.marker').append(elInner);
     }
 });
+

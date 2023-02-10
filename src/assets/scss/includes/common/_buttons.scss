@@ -211,9 +211,19 @@ button {
     }
   }
 
+  &--md {
+    @include text2;
+    padding: 14px 34px;
+
+    &--square {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
   &--sm {
     @include text2;
-    padding: 13px 24px;
+    padding: 12px 24px;
 
     &--square {
       width: 46px;
@@ -472,6 +482,31 @@ button {
   }
 }
 
+.button-download-prr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  border: 1px solid $grayBorder1;
+  gap: 10px;
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  @include r($breakpoint-2) {
+    padding: 10px;
+    gap: 5px;
+  }
+}
+
+.leaf-py-40 {
+  @include rmin($breakpoint-2) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .button-download {
   display: flex;
   flex-direction: column;
@@ -488,4 +523,9 @@ button {
     padding: 10px;
     gap: 5px;
   }
+}
+
+.button-download-gray {
+  background-color: $grayBg;
+  border-color: $tr;
 }
