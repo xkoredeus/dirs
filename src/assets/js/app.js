@@ -241,8 +241,8 @@ $(() => {
                 slidesPerView: 7,
             },
             1560: {
-                slidesPerView: 14.7,
-                spaceBetween: 7,
+                spaceBetween: 14.7,
+                slidesPerView: 7,
             },
         },
     });
@@ -558,18 +558,38 @@ $(() => {
     });
 });
 
+
+$(() => {
+    $('.order-item-list').hide();
+    $('.js-toggle-order-list').on('click', function () {
+        if (!($(this).hasClass('active'))) {
+            $(this)
+                .addClass('active')
+                .find('span').text('Скрыть')
+                .parents('.order-item-list__wrapper')
+                .find('.order-item-list')
+                .show()
+        } else (
+            $(this)
+                .removeClass('active')
+                .find('span').text('Показать')
+                .parents('.order-item-list__wrapper')
+                .find('.order-item-list')
+                .hide()
+        )
+    });
+});
+
 $(() => {
     $('.js-card-toggle-favorites').on('click', function () {
         if (!($(this).hasClass('active'))) {
             $(this)
                 .addClass('active')
                 .find('span').text('В избранном')
-                .parent()
         } else (
             $(this)
                 .removeClass('active')
                 .find('span').text('В избранное')
-                .parent()
         )
     });
 });
